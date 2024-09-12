@@ -18,7 +18,7 @@ function my_acf_init() {
 			'name'              => 'custom-button',
             'title'             => __('Custom Button'),
             'description'       => __('A custom button block.'),
-            'render_template'   => 'template-parts/blocks/custom-button.php',
+            'render_template'   => 'template-parts/blocks/button.php',
             'category'          => 'formatting',
             'icon'              => 'button',
             'keywords'          => array( 'button', 'link' ),
