@@ -1,17 +1,20 @@
 .header-contact {
-  padding: 1.5rem 1rem;
+  padding: 28px 1rem;
   list-style: none;
   display: flex;
-  flex-direction: row;
+  flex-direction: row;  
   justify-content: space-between;
   align-items: center;
+  background-color: $dark-blue;
 }
 
 .header-contact-item {
   text-transform: uppercase;
-  font-weight: bold;
+  font-weight: 700;
+  color: $secondary;
+  font-size: 16px;
 }
 
 .header-contact-title {
-  color: $contact-title-color;
+  color: $secondary;
 }

@@ -1,11 +1,9 @@
-@import url('https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100..900;1,100..900&display=swap" rel="stylesheet');
-
 .site-branding-navigation {
-  background-color: #d9d9d9;
+  background-color: #252525;
   display: flex;
   justify-content: space-between;
   align-items: center;
-  padding: 1.5rem 1rem;
+  padding: 29px 1rem;
 }
 .site-branding-navigation .site-branding {
   display: flex;
@@ -17,7 +15,7 @@
 }
 .site-branding-navigation .site-branding .site-title a {
   text-decoration: none;
-  color: #333;
+  color: black;
 }
 .site-branding-navigation .site-branding .site-description {
   margin: 0;
@@ -33,7 +31,7 @@
 .site-branding-navigation .main-navigation .menu {
   display: flex;
   list-style: none;
-  gap: 4rem;
+  gap: 100px;
   margin: 0;
 }
 .site-branding-navigation .main-navigation .menu > li {
@@ -43,11 +41,12 @@
 }
 .site-branding-navigation .main-navigation .menu > li a {
   text-decoration: none;
-  color: #333;
+  color: #FFFFFF;
+  font-weight: 300;
   font-size: 1rem;
 }
 .site-branding-navigation .main-navigation .menu > li a:hover {
-  color: #0073aa;
+  color: grey;
 }
 .site-branding-navigation .main-navigation .menu > li ul {
   display: none;
@@ -112,25 +111,28 @@
   }
 }
 .header-contact {
-  padding: 1.5rem 1rem;
+  padding: 28px 1rem;
   list-style: none;
   display: flex;
   flex-direction: row;
   justify-content: space-between;
   align-items: center;
+  background-color: #28374A;
 }
 
 .header-contact-item {
   text-transform: uppercase;
-  font-weight: bold;
+  font-weight: 700;
+  color: #FFFFFF;
+  font-size: 16px;
 }
 
 .header-contact-title {
-  color: #757575;
+  color: #FFFFFF;
 }
 
 .site-footer {
-  background-color: #ececec;
+  background-color: gray;
   display: flex;
   flex-direction: column;
   gap: 1.5rem;
@@ -155,7 +157,8 @@
   align-items: center;
   justify-content: space-between;
   padding: 112px 230px;
-  background-color: #f9f9f9;
+  background-color: #252525;
+  color: #FFFFFF;
 }
 .about-me-section .about-me-text {
   flex: 1;
@@ -354,6 +357,9 @@
   background-color: #f2f2f2;
   border: 2px solid #ccc;
   border-radius: 4px;
+  cursor: pointer;
+  transition: background-color 0.3s, border-color 0.3s;
+  flex-shrink: 0;
 }
 .contact-form-section form .form-actions input[type=checkbox]:checked {
   background-color: #ccc;
@@ -379,6 +385,11 @@
   height: 380px;
   display: block;
   border-radius: 8px;
+}
+
+body {
+  background-color: #252525;
+  font-family: "Montserrat", sans-serif;
 }
 
 html,
@@ -468,7 +479,6 @@ video {
   font-size: 100%;
   font: inherit;
   vertical-align: baseline;
-  font-family: 'Montserrat';
 }
 
 article,
@@ -510,6 +520,11 @@ q:after {
 table {
   border-collapse: collapse;
   border-spacing: 0;
+}
+
+html {
+  font-family: "Montserrat", sans-serif;
+  background-color: #252525;
 }
 
 /*# sourceMappingURL=style.css.map */

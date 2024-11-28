@@ -10,6 +10,10 @@
 @import 'contact/contact-section';
 @import 'contact/contact-form';
 @import 'contact/contact-text';
+body {
+  background-color: $primary;
+  font-family: 'Montserrat', sans-serif;
+}
 html,
 body,
 div,
@@ -133,4 +137,8 @@ q:after {
 table {
   border-collapse: collapse;
   border-spacing: 0;
+}
+html {
+  font-family: 'Montserrat', sans-serif;
+  background-color: $primary;
 }
