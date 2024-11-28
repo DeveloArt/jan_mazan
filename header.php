@@ -23,23 +23,9 @@
 		<header id="masthead" class="site-header">
 			<div class="site-branding-navigation">
 				<div class="site-branding">
-					<?php
-					the_custom_logo();
-					if (is_front_page() && is_home()) :
-					?>
-						<h1 class="site-title"><a href="<?php echo esc_url(home_url('/')); ?>" rel="home"><?php bloginfo('name'); ?></a></h1>
-					<?php
-					else :
-					?>
-						<p class="site-title"><a href="<?php echo esc_url(home_url('/')); ?>" rel="home"><?php bloginfo('name'); ?></a></p>
-					<?php
-					endif;
-					$my_theme_description = get_bloginfo('description', 'display');
-					if ($my_theme_description || is_customize_preview()) :
-					?>
-						<p class="site-description"><?php echo $my_theme_description; // phpcs:ignore WordPress.Security.EscapeOutput.OutputNotEscaped
-													?></p>
-					<?php endif; ?>
+					<a href="<?php echo esc_url(home_url('/')); ?>">
+						<img src="<?php echo get_template_directory_uri(); ?>/assets/logo.svg" alt="<?php bloginfo('name'); ?> logo" class="site-logo">
+					</a>
 				</div><!-- .site-branding -->
 
 				<nav id="site-navigation" class="main-navigation">

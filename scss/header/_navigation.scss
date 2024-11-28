@@ -1,9 +1,10 @@
+@import '../variables';
 .site-branding-navigation {
-  background-color: $navigation-background-color;
+  background-color: $primary;
   display: flex;
   justify-content: space-between;
   align-items: center;
-  padding: 1.5rem 1rem;
+  padding: 29px 1rem;
 
   .site-branding {
     display: flex;
@@ -15,7 +16,7 @@
 
       a {
         text-decoration: none;
-        color: $primary-color;
+        color: black;
       }
     }
 
@@ -37,7 +38,7 @@
     .menu {
       display: flex;
       list-style: none;
-      gap: 4rem;
+      gap: 100px;
       margin: 0;
 
       > li {
@@ -47,11 +48,12 @@
 
         a {
           text-decoration: none;
-          color: $primary-color;
+          color: $secondary;
+          font-weight: 300;
           font-size: $font-size-base;
 
           &:hover {
-            color: $secondary-color;
+            color: grey
           }
         }
 
