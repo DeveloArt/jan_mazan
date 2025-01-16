@@ -1,7 +1,9 @@
 @charset "UTF-8";
 .site-header {
+  z-index: 99;
+  position: fixed;
+  width: 100%;
   background-color: #222;
-  border-bottom: 1px solid #444;
 }
 .site-header .container {
   max-width: 1200px;
@@ -253,10 +255,6 @@
   box-sizing: border-box;
 }
 
-.custom-button:hover {
-  background-color: rgb(101.0040322581, 143.5443548387, 197.9959677419);
-}
-
 .notarial-container {
   padding: 60px 0;
   background-color: #252525;
@@ -506,10 +504,6 @@
 .contact-form-section form .form-actions input[type=checkbox]:checked::before {
   color: #fff;
 }
-.contact-form-section form .form-actions input[type=checkbox]:hover {
-  border-color: rgb(53.2217741935, 92.939516129, 143.7782258065);
-}
-
 .contact-text {
   max-width: 600px;
 }
