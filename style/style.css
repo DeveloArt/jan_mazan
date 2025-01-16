@@ -37,7 +37,7 @@
   text-transform: uppercase;
   font-size: 16px;
   font-weight: 300;
-  font-family: "Montserrat";
+  font-family: "Montserrat", sans-serif;
   transition: color 0.3s;
 }
 .site-header .main-navigation .menu > li a:hover {
