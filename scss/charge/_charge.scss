@@ -4,12 +4,13 @@
     width: 100%;
     display: flex;
     align-items: center;
-    justify-content: center;
-
+    justify-content: space-between;
+    outline: 1px solid tomato;
 
     .charge-section-content {
         max-width: 580px;
         padding: 50px;
+        padding-left: 230px;
         .button-container{
             display: block;
             width: 200px;
