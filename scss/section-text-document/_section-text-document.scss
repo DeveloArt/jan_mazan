@@ -1,0 +1,53 @@
+.questionnaire-section {
+  padding: 50px 20px;
+  color: #fff;
+  font-family: "Montserrat", sans-serif;
+
+  &.grey-background {
+    background-color: $primary;
+  }
+
+  &.blue-background {
+    background-color: $dark-blue;
+  }
+
+  .questionnaire-container {
+    max-width: 1200px;
+    margin: 0 auto;
+    display: flex;
+    flex-direction: column;
+  }
+
+  .section-title {
+    font-size: 32px;
+    font-weight: 700;
+    margin-bottom: 15px;
+  }
+
+  .section-description {
+    font-size: 18px;
+    margin-bottom: 30px;
+    line-height: 1.6;
+  }
+
+  .file-list {
+    display: flex;
+    justify-content: center;
+    gap: 20px;
+
+    .file-item {
+      text-align: center;
+
+      .file-icon {
+        width: 60px;
+        height: 60px;
+        margin-bottom: 10px;
+      }
+
+      .file-name {
+        font-size: 16px;
+        margin-bottom: 10px;
+      }
+    }
+  }
+}
