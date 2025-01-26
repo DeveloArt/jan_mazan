@@ -17,6 +17,7 @@ function get_template_mapping()
         'poswiadczenie' => 'page-text-list-block.php',
         'depozyt notarialny' => 'page-text-list-block.php',
         'sprawy spadkowe' => 'page-text-list-block.php',
+        'dokumenty' => 'page-dokumenty.php',
     ];
 }
 
