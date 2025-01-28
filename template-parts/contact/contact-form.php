@@ -27,7 +27,8 @@ if ($_SERVER["REQUEST_METHOD"] == "POST") {
         <div class="form-actions">
             <label for="consent">
                 <input type="checkbox" id="consent" name="consent">
-                <span>Wyrażam zgodę na przetwarzanie moich danych.</span>
+                <p>Wyrażam zgodę na <br/><span>przetwarzanie moich danych.
+                </span></p>
             </label>
             <input type="submit" value="Wyślij" class="custom-button">
         </div>
