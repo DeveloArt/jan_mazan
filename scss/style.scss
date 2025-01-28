@@ -1,22 +1,24 @@
-@import 'variables';
-@import 'navigation/navigation';
-@import 'navigation/contact';
-@import 'footer/footer';
-@import 'about/aboutMe';
-@import 'button/customButton';
-@import 'notarial-actions/notarialActions';
-@import 'charge/charge';
-@import 'section-document/section-document';
-@import 'contact/contact-section';
-@import 'contact/contact-form';
-@import 'contact/contact-text';
-@import 'hero/hero';
-@import 'text-blocks/text-blocks';
-@import 'text-list-blocks/text-list-blocks';
+@import "variables";
+@import "navigation/navigation";
+@import "navigation/contact";
+@import "footer/footer";
+@import "about/aboutMe";
+@import "button/customButton";
+@import "notarial-actions/notarialActions";
+@import "charge/charge";
+@import "section-document/section-document";
+@import "contact/contact-section";
+@import "contact/contact-form";
+@import "contact/contact-text";
+@import "hero/hero";
+@import "text-blocks/text-blocks";
+@import "text-list-blocks/text-list-blocks";
+@import "section-text-document/section-text-document";
+@import "section-text-document/grey-one-document";
 
 body {
   background-color: $primary;
-  font-family: 'Montserrat', sans-serif;
+  font-family: "Montserrat", sans-serif;
 }
 html,
 body,
@@ -130,7 +132,7 @@ blockquote:before,
 blockquote:after,
 q:before,
 q:after {
-  content: '';
+  content: "";
   content: none;
 }
 table {
@@ -138,7 +140,7 @@ table {
   border-spacing: 0;
 }
 html {
-  font-family: 'Montserrat', sans-serif;
+  font-family: "Montserrat", sans-serif;
   background-color: $primary;
 }
 
