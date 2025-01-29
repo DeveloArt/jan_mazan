@@ -6,6 +6,14 @@ require get_template_directory() . '/inc/custom-header.php';
 require get_template_directory() . '/inc/customizer.php';
 require get_template_directory() . '/inc/shortcodes.php';
 
+add_action('wpcf7_mail_sent', 'cf7_after_submission');
+function cf7_after_submission($contact_form) {
+    $submission = WPCF7_Submission::get_instance();
+    if ($submission) {
+        $data = $submission->get_posted_data();
+        error_log(print_r($data, true)); // Logowanie przesłanych danych
+    }
+}
 function my_theme_setup()
 {
 	add_theme_support('editor-styles');
@@ -37,6 +45,8 @@ if (function_exists('acf_add_options_page')) {
 		'redirect'      => false,
 	));
 }
+
+
 
 function my_theme_enqueue_styles()
 {

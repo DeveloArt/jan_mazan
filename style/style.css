@@ -413,16 +413,14 @@
   justify-content: flex-end;
   width: 600px;
 }
-.contact-form-section form {
+.contact-form-section .wpcf7-form {
   display: flex;
   flex-direction: column;
   align-items: center;
   justify-content: center;
   width: 100%;
 }
-.contact-form-section form input[type=text],
-.contact-form-section form input[type=email],
-.contact-form-section form textarea {
+.contact-form-section .wpcf7-form .wpcf7-form-control {
   width: 100%;
   height: 54px;
   margin-bottom: 10px;
@@ -430,31 +428,26 @@
   border-radius: 20px;
   box-sizing: border-box;
   border: none;
+  font-size: 18px;
 }
-.contact-form-section form input[type=text]:focus,
-.contact-form-section form input[type=email]:focus,
-.contact-form-section form textarea:focus {
+.contact-form-section .wpcf7-form .wpcf7-form-control:focus {
   outline: none;
 }
-.contact-form-section form input[type=text]::placeholder,
-.contact-form-section form input[type=email]::placeholder,
-.contact-form-section form textarea::placeholder {
+.contact-form-section .wpcf7-form .wpcf7-form-control::placeholder {
   color: #888888;
   font-size: 20px;
   font-weight: 400;
 }
-.contact-form-section form input[type=text]:focus::placeholder,
-.contact-form-section form input[type=email]:focus::placeholder,
-.contact-form-section form textarea:focus::placeholder {
+.contact-form-section .wpcf7-form .wpcf7-form-control:focus::placeholder {
   color: #ffffff;
 }
-.contact-form-section form textarea {
+.contact-form-section .wpcf7-form textarea.wpcf7-form-control {
   height: auto;
   min-height: 222px;
   line-height: 1.5;
   resize: vertical;
 }
-.contact-form-section form .form-actions {
+.contact-form-section .wpcf7-form .form-actions {
   display: flex;
   align-items: center;
   justify-content: center;
@@ -463,18 +456,18 @@
   height: 44px;
   width: 100%;
 }
-.contact-form-section form .form-actions label {
+.contact-form-section .wpcf7-form .form-actions label {
   display: flex;
   align-items: center;
   gap: 5px;
 }
-.contact-form-section form .form-actions label span {
+.contact-form-section .wpcf7-form .form-actions label span {
   font-weight: 400;
   font-size: 16px;
   font-family: "Montserrat";
   width: 244px;
 }
-.contact-form-section form .form-actions input[type=checkbox] {
+.contact-form-section .wpcf7-form .form-actions input[type=checkbox] {
   appearance: none;
   width: 40px;
   height: 40px;
@@ -485,7 +478,7 @@
   cursor: pointer;
   transition: background-color 0.3s, border-color 0.3s;
 }
-.contact-form-section form .form-actions input[type=checkbox]::before {
+.contact-form-section .wpcf7-form .form-actions input[type=checkbox]::before {
   content: "✔";
   position: absolute;
   top: 50%;
@@ -495,13 +488,48 @@
   color: transparent;
   transition: color 0.3s;
 }
-.contact-form-section form .form-actions input[type=checkbox]:checked {
-  background-color: #4375B5;
-  border-color: #4375B5;
+.contact-form-section .wpcf7-form .form-actions input[type=checkbox]:checked {
+  background-color: #007bff;
+  border-color: #007bff;
 }
-.contact-form-section form .form-actions input[type=checkbox]:checked::before {
+.contact-form-section .wpcf7-form .form-actions input[type=checkbox]:checked::before {
   color: #fff;
 }
+.contact-form-section .wpcf7-form .custom-button {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 100%;
+  height: 40px;
+  background-color: #007bff;
+  color: #fff;
+  text-align: center;
+  text-decoration: none;
+  font-size: 20px;
+  font-weight: 400;
+  line-height: 40px;
+  border: none;
+  border-radius: 40px;
+  cursor: pointer;
+  transition: background-color 0.3s ease;
+  box-sizing: border-box;
+}
+.contact-form-section .wpcf7-form .wpcf7-submit:hover,
+.contact-form-section .wpcf7-form .custom-button:hover {
+  background-color: rgb(51, 149.4, 255);
+}
+.contact-form-section .wpcf7-form .wpcf7-not-valid {
+  border: 2px solid red;
+}
+.contact-form-section .wpcf7-form .wpcf7-response-output {
+  margin-top: 15px;
+  padding: 10px;
+  border-radius: 20px;
+  font-size: 16px;
+  color: white;
+  background-color: #28a745;
+}
+
 .contact-text {
   max-width: 600px;
 }
@@ -520,7 +548,7 @@
   color: #FFFFFF;
 }
 .contact-text .header-contact-item li .header-contact-title {
-  color: #4375B5;
+  color: #007bff;
   font-size: 16px;
 }
 .contact-text p {
@@ -587,7 +615,7 @@
 }
 .container .text-wrapper .kancelaria {
   font-size: 40px;
-  color: #4375B5;
+  color: #007bff;
   font-weight: 400;
 }
 .container .text-wrapper .jan-mazan {
