@@ -3,31 +3,30 @@ $placeholder-focus-color: #ffffff;
 $border-radius: 20px;
 $input-height: 54px;
 $textarea-min-height: 222px;
-$blue: #007bff; // Kolor dla zaznaczonego checkboxa
+$blue: #4375b5;
 
 .contact-form-section {
-  display: flex;
-  flex-direction: column;
-  align-items: flex-end;
-  justify-content: flex-end;
+  /* Całkowita szerokość kontenera formularza */
   width: 600px;
+  margin: 0 auto; /* Jeśli chcesz wycentrować sekcję */
 
   .wpcf7-form {
+    /* Ustawiamy formularz w kolumnie */
     display: flex;
     flex-direction: column;
-    align-items: center;
-    justify-content: center;
-    width: 100%;
+    gap: 10px; /* Odstępy pionowe między elementami formularza */
 
+    /* Podstawowe pola input (tekst, email, temat) */
     .wpcf7-form-control {
       width: 100%;
       height: $input-height;
-      margin-bottom: 10px;
+      margin-bottom: 0;
       padding: 20px;
       border-radius: $border-radius;
       box-sizing: border-box;
       border: none;
       font-size: 18px;
+      font-family: "Montserrat", sans-serif;
 
       &:focus {
         outline: none;
@@ -44,34 +43,23 @@ $blue: #007bff; // Kolor dla zaznaczonego checkboxa
       }
     }
 
+    /* Pole tekstowe (textarea) */
     textarea.wpcf7-form-control {
+      /* Nadpisuje height, bo textarea zwykle ma domyślną wysokość */
       height: auto;
       min-height: $textarea-min-height;
       line-height: 1.5;
-      resize: vertical;
+      resize: vertical; /* Możliwość ręcznego rozciągania w pionie */
     }
 
-    .form-actions {
+    /* --- CHECKBOX --- */
+    /* CF7 owija checkbox w <span class="wpcf7-form-control-wrap" data-name="consent"> */
+    /* a sam input to <input type="checkbox"> oraz <span class="wpcf7-list-item-label">Tekst</span>. */
+    /* Poniżej stylujemy to dokładnie, by uzyskać efekt niestandardowego checkboxa. */
+    p span.wpcf7-form-control-wrap[data-name="consent"] {
       display: flex;
       align-items: center;
-      justify-content: center;
-      gap: 10px;
-      margin-top: 10px;
-      height: 44px;
-      width: 100%;
-
-      label {
-        display: flex;
-        align-items: center;
-        gap: 5px;
-
-        span {
-          font-weight: 400;
-          font-size: 16px;
-          font-family: "Montserrat";
-          width: 244px;
-        }
-      }
+      gap: 10px; /* Odstęp między kwadratem checkboxa a etykietą */
 
       input[type="checkbox"] {
         appearance: none;
@@ -106,46 +94,31 @@ $blue: #007bff; // Kolor dla zaznaczonego checkboxa
           }
         }
       }
+
+      .wpcf7-list-item-label {
+        font-size: 16px;
+        font-family: "Montserrat", sans-serif;
+        line-height: 1.3;
+      }
     }
 
-    // Stylowanie przycisku wysyłania formularza
-    .custom-button {
+    /* Zmiana układu dla formularza wysyłania */
+    p {
       display: flex;
-      justify-content: center;
+      justify-content: space-between;
       align-items: center;
-      width: 100%;
-      height: 40px;
-      background-color: $blue;
-      color: #fff;
-      text-align: center;
-      text-decoration: none;
-      font-size: 20px;
-      font-weight: 400;
-      line-height: 40px;
-      border: none;
-      border-radius: 40px;
-      cursor: pointer;
-      transition: background-color 0.3s ease;
-      box-sizing: border-box;
-    }
-
-    .wpcf7-submit:hover,
-    .custom-button:hover {
-      background-color: lighten($blue, 10%);
     }
 
     .wpcf7-not-valid {
       border: 2px solid red;
     }
-
-    // Stylowanie wiadomości po wysłaniu
     .wpcf7-response-output {
       margin-top: 15px;
       padding: 10px;
       border-radius: $border-radius;
       font-size: 16px;
       color: white;
-      background-color: #28a745; // Zielone tło dla sukcesu
+      background-color: #28a745;
     }
   }
 }

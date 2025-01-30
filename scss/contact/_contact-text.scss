@@ -1,5 +1,5 @@
 .contact-text {
-    max-width: 600px;
+    max-width: 480px;
     h2 {
         font-size: 40px;
         font-weight: 700;
@@ -9,6 +9,7 @@
     .header-contact-item{
         text-transform: uppercase;
         margin-bottom: 25px;
+        list-style: none;
         li{
             font-weight: 700;
             color: $secondary;

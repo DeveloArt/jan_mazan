@@ -1,7 +1,9 @@
 @charset "UTF-8";
 .site-header {
+  z-index: 99;
+  position: fixed;
+  width: 100%;
   background-color: #222;
-  border-bottom: 1px solid #444;
 }
 .site-header .container {
   max-width: 1200px;
@@ -35,7 +37,7 @@
   text-transform: uppercase;
   font-size: 16px;
   font-weight: 300;
-  font-family: "Montserrat";
+  font-family: "Montserrat", sans-serif;
   transition: color 0.3s;
 }
 .site-header .main-navigation .menu > li a:hover {
@@ -245,12 +247,14 @@
   text-decoration: none;
   font-size: 20px;
   font-weight: 400;
-  line-height: 40px;
+  line-height: 24px;
   border: none;
   border-radius: 40px;
   cursor: pointer;
   transition: background-color 0.3s ease;
   box-sizing: border-box;
+  font-family: "Montserrat";
+  text-transform: uppercase;
 }
 
 .notarial-container {
@@ -314,11 +318,12 @@
   width: 100%;
   display: flex;
   align-items: center;
-  justify-content: center;
+  justify-content: space-between;
 }
 .charge-section .charge-section-content {
   max-width: 580px;
   padding: 50px;
+  padding-left: 230px;
 }
 .charge-section .charge-section-content .button-container {
   display: block;
@@ -407,28 +412,33 @@
 }
 
 .contact-form-section {
-  display: flex;
-  flex-direction: column;
-  align-items: flex-end;
-  justify-content: flex-end;
+  /* Całkowita szerokość kontenera formularza */
   width: 600px;
+  margin: 0 auto; /* Jeśli chcesz wycentrować sekcję */
 }
 .contact-form-section .wpcf7-form {
+  /* Ustawiamy formularz w kolumnie */
   display: flex;
   flex-direction: column;
-  align-items: center;
-  justify-content: center;
-  width: 100%;
+  gap: 10px; /* Odstępy pionowe między elementami formularza */
+  /* Podstawowe pola input (tekst, email, temat) */
+  /* Pole tekstowe (textarea) */
+  /* --- CHECKBOX --- */
+  /* CF7 owija checkbox w <span class="wpcf7-form-control-wrap" data-name="consent"> */
+  /* a sam input to <input type="checkbox"> oraz <span class="wpcf7-list-item-label">Tekst</span>. */
+  /* Poniżej stylujemy to dokładnie, by uzyskać efekt niestandardowego checkboxa. */
+  /* Zmiana układu dla formularza wysyłania */
 }
 .contact-form-section .wpcf7-form .wpcf7-form-control {
   width: 100%;
   height: 54px;
-  margin-bottom: 10px;
+  margin-bottom: 0;
   padding: 20px;
   border-radius: 20px;
   box-sizing: border-box;
   border: none;
   font-size: 18px;
+  font-family: "Montserrat", sans-serif;
 }
 .contact-form-section .wpcf7-form .wpcf7-form-control:focus {
   outline: none;
@@ -442,32 +452,18 @@
   color: #ffffff;
 }
 .contact-form-section .wpcf7-form textarea.wpcf7-form-control {
+  /* Nadpisuje height, bo textarea zwykle ma domyślną wysokość */
   height: auto;
   min-height: 222px;
   line-height: 1.5;
-  resize: vertical;
+  resize: vertical; /* Możliwość ręcznego rozciągania w pionie */
 }
-.contact-form-section .wpcf7-form .form-actions {
+.contact-form-section .wpcf7-form p span.wpcf7-form-control-wrap[data-name=consent] {
   display: flex;
   align-items: center;
-  justify-content: center;
-  gap: 10px;
-  margin-top: 10px;
-  height: 44px;
-  width: 100%;
+  gap: 10px; /* Odstęp między kwadratem checkboxa a etykietą */
 }
-.contact-form-section .wpcf7-form .form-actions label {
-  display: flex;
-  align-items: center;
-  gap: 5px;
-}
-.contact-form-section .wpcf7-form .form-actions label span {
-  font-weight: 400;
-  font-size: 16px;
-  font-family: "Montserrat";
-  width: 244px;
-}
-.contact-form-section .wpcf7-form .form-actions input[type=checkbox] {
+.contact-form-section .wpcf7-form p span.wpcf7-form-control-wrap[data-name=consent] input[type=checkbox] {
   appearance: none;
   width: 40px;
   height: 40px;
@@ -478,7 +474,7 @@
   cursor: pointer;
   transition: background-color 0.3s, border-color 0.3s;
 }
-.contact-form-section .wpcf7-form .form-actions input[type=checkbox]::before {
+.contact-form-section .wpcf7-form p span.wpcf7-form-control-wrap[data-name=consent] input[type=checkbox]::before {
   content: "✔";
   position: absolute;
   top: 50%;
@@ -488,35 +484,22 @@
   color: transparent;
   transition: color 0.3s;
 }
-.contact-form-section .wpcf7-form .form-actions input[type=checkbox]:checked {
-  background-color: #007bff;
-  border-color: #007bff;
+.contact-form-section .wpcf7-form p span.wpcf7-form-control-wrap[data-name=consent] input[type=checkbox]:checked {
+  background-color: #4375b5;
+  border-color: #4375b5;
 }
-.contact-form-section .wpcf7-form .form-actions input[type=checkbox]:checked::before {
+.contact-form-section .wpcf7-form p span.wpcf7-form-control-wrap[data-name=consent] input[type=checkbox]:checked::before {
   color: #fff;
 }
-.contact-form-section .wpcf7-form .custom-button {
+.contact-form-section .wpcf7-form p span.wpcf7-form-control-wrap[data-name=consent] .wpcf7-list-item-label {
+  font-size: 16px;
+  font-family: "Montserrat", sans-serif;
+  line-height: 1.3;
+}
+.contact-form-section .wpcf7-form p {
   display: flex;
-  justify-content: center;
+  justify-content: space-between;
   align-items: center;
-  width: 100%;
-  height: 40px;
-  background-color: #007bff;
-  color: #fff;
-  text-align: center;
-  text-decoration: none;
-  font-size: 20px;
-  font-weight: 400;
-  line-height: 40px;
-  border: none;
-  border-radius: 40px;
-  cursor: pointer;
-  transition: background-color 0.3s ease;
-  box-sizing: border-box;
-}
-.contact-form-section .wpcf7-form .wpcf7-submit:hover,
-.contact-form-section .wpcf7-form .custom-button:hover {
-  background-color: rgb(51, 149.4, 255);
 }
 .contact-form-section .wpcf7-form .wpcf7-not-valid {
   border: 2px solid red;
@@ -531,7 +514,7 @@
 }
 
 .contact-text {
-  max-width: 600px;
+  max-width: 480px;
 }
 .contact-text h2 {
   font-size: 40px;
@@ -542,13 +525,14 @@
 .contact-text .header-contact-item {
   text-transform: uppercase;
   margin-bottom: 25px;
+  list-style: none;
 }
 .contact-text .header-contact-item li {
   font-weight: 700;
   color: #FFFFFF;
 }
 .contact-text .header-contact-item li .header-contact-title {
-  color: #007bff;
+  color: #4375b5;
   font-size: 16px;
 }
 .contact-text p {
@@ -615,7 +599,7 @@
 }
 .container .text-wrapper .kancelaria {
   font-size: 40px;
-  color: #007bff;
+  color: #4375b5;
   font-weight: 400;
 }
 .container .text-wrapper .jan-mazan {
