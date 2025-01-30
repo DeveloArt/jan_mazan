@@ -14,6 +14,20 @@ function cf7_after_submission($contact_form) {
         error_log(print_r($data, true)); // Logowanie przesłanych danych
     }
 }
+add_filter('wpcf7_form_elements', 'my_cf7_custom_button');
+function my_cf7_custom_button($form_html) {
+
+    // Buforujemy wynik funkcji render_custom_button()
+    ob_start();
+    // Używamy jej w trybie przycisku 'submit' => $is_submit = true
+    render_custom_button('Wyślij', '', true);
+    $custom_button_html = ob_get_clean();
+
+    // Podmieniamy domyślny shortcode CF7 [submit "Wyślij"] na nasz kod przycisku
+    $form_html = str_replace('[submit "Wyślij"]', $custom_button_html, $form_html);
+
+    return $form_html;
+}
 function my_theme_setup()
 {
 	add_theme_support('editor-styles');
