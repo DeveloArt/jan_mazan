@@ -15,7 +15,7 @@
 @import "text-list-blocks/text-list-blocks";
 @import "section-text-document/section-text-document";
 @import "section-text-document/grey-one-document";
-
+@import "popup/popup";
 body {
   background-color: $primary;
   font-family: "Montserrat", sans-serif;
@@ -143,4 +143,3 @@ html {
   font-family: "Montserrat", sans-serif;
   background-color: $primary;
 }
-
