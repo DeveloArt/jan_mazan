@@ -1,7 +1,9 @@
 @charset "UTF-8";
 .site-header {
+  z-index: 99;
+  position: fixed;
+  width: 100%;
   background-color: #222;
-  border-bottom: 1px solid #444;
 }
 .site-header .container {
   max-width: 1200px;
@@ -35,7 +37,7 @@
   text-transform: uppercase;
   font-size: 16px;
   font-weight: 300;
-  font-family: "Montserrat";
+  font-family: "Montserrat", sans-serif;
   transition: color 0.3s;
 }
 .site-header .main-navigation .menu > li a:hover {
@@ -317,7 +319,6 @@
   display: flex;
   align-items: center;
   justify-content: space-between;
-  outline: 1px solid tomato;
 }
 .charge-section .charge-section-content {
   max-width: 580px;
@@ -411,79 +412,58 @@
 }
 
 .contact-form-section {
+  /* Całkowita szerokość kontenera formularza */
+  width: 600px;
+  margin: 0 auto; /* Jeśli chcesz wycentrować sekcję */
+}
+.contact-form-section .wpcf7-form {
+  /* Ustawiamy formularz w kolumnie */
   display: flex;
   flex-direction: column;
-  align-items: flex-end;
-  justify-content: flex-end;
-  width: 480px;
+  gap: 10px; /* Odstępy pionowe między elementami formularza */
+  /* Podstawowe pola input (tekst, email, temat) */
+  /* Pole tekstowe (textarea) */
+  /* --- CHECKBOX --- */
+  /* CF7 owija checkbox w <span class="wpcf7-form-control-wrap" data-name="consent"> */
+  /* a sam input to <input type="checkbox"> oraz <span class="wpcf7-list-item-label">Tekst</span>. */
+  /* Poniżej stylujemy to dokładnie, by uzyskać efekt niestandardowego checkboxa. */
+  /* Zmiana układu dla formularza wysyłania */
 }
-.contact-form-section form {
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-  justify-content: center;
-  width: 100%;
-}
-.contact-form-section form input[type=text],
-.contact-form-section form input[type=email],
-.contact-form-section form textarea {
+.contact-form-section .wpcf7-form .wpcf7-form-control {
   width: 100%;
   height: 54px;
-  margin-bottom: 10px;
+  margin-bottom: 0;
   padding: 20px;
   border-radius: 20px;
   box-sizing: border-box;
   border: none;
-  font-size: 20px;
+  font-size: 18px;
+  font-family: "Montserrat", sans-serif;
 }
-.contact-form-section form input[type=text]:focus,
-.contact-form-section form input[type=email]:focus,
-.contact-form-section form textarea:focus {
+.contact-form-section .wpcf7-form .wpcf7-form-control:focus {
   outline: none;
 }
-.contact-form-section form input[type=text]::placeholder,
-.contact-form-section form input[type=email]::placeholder,
-.contact-form-section form textarea::placeholder {
+.contact-form-section .wpcf7-form .wpcf7-form-control::placeholder {
   color: #888888;
   font-size: 20px;
   font-weight: 400;
 }
-.contact-form-section form input[type=text]:focus::placeholder,
-.contact-form-section form input[type=email]:focus::placeholder,
-.contact-form-section form textarea:focus::placeholder {
+.contact-form-section .wpcf7-form .wpcf7-form-control:focus::placeholder {
   color: #ffffff;
 }
-.contact-form-section form textarea {
+.contact-form-section .wpcf7-form textarea.wpcf7-form-control {
+  /* Nadpisuje height, bo textarea zwykle ma domyślną wysokość */
   height: auto;
   min-height: 222px;
   line-height: 1.5;
-  resize: vertical;
+  resize: vertical; /* Możliwość ręcznego rozciągania w pionie */
 }
-.contact-form-section form .form-actions {
+.contact-form-section .wpcf7-form p span.wpcf7-form-control-wrap[data-name=consent] {
   display: flex;
   align-items: center;
-  justify-content: center;
-  gap: 10px;
-  margin-top: 10px;
-  height: 44px;
-  width: 100%;
+  gap: 10px; /* Odstęp między kwadratem checkboxa a etykietą */
 }
-.contact-form-section form .form-actions label {
-  display: flex;
-  align-items: center;
-  gap: 5px;
-}
-.contact-form-section form .form-actions label p {
-  font-weight: 400;
-  font-size: 16px;
-  font-family: "Montserrat";
-  line-height: 20px;
-  width: 244px;
-}
-.contact-form-section form .form-actions label span {
-  text-decoration: underline;
-}
-.contact-form-section form .form-actions input[type=checkbox] {
+.contact-form-section .wpcf7-form p span.wpcf7-form-control-wrap[data-name=consent] input[type=checkbox] {
   appearance: none;
   width: 40px;
   height: 40px;
@@ -494,7 +474,7 @@
   cursor: pointer;
   transition: background-color 0.3s, border-color 0.3s;
 }
-.contact-form-section form .form-actions input[type=checkbox]::before {
+.contact-form-section .wpcf7-form p span.wpcf7-form-control-wrap[data-name=consent] input[type=checkbox]::before {
   content: "✔";
   position: absolute;
   top: 50%;
@@ -504,13 +484,35 @@
   color: transparent;
   transition: color 0.3s;
 }
-.contact-form-section form .form-actions input[type=checkbox]:checked {
-  background-color: #4375B5;
-  border-color: #4375B5;
+.contact-form-section .wpcf7-form p span.wpcf7-form-control-wrap[data-name=consent] input[type=checkbox]:checked {
+  background-color: #4375b5;
+  border-color: #4375b5;
 }
-.contact-form-section form .form-actions input[type=checkbox]:checked::before {
+.contact-form-section .wpcf7-form p span.wpcf7-form-control-wrap[data-name=consent] input[type=checkbox]:checked::before {
   color: #fff;
 }
+.contact-form-section .wpcf7-form p span.wpcf7-form-control-wrap[data-name=consent] .wpcf7-list-item-label {
+  font-size: 16px;
+  font-family: "Montserrat", sans-serif;
+  line-height: 1.3;
+}
+.contact-form-section .wpcf7-form p {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+.contact-form-section .wpcf7-form .wpcf7-not-valid {
+  border: 2px solid red;
+}
+.contact-form-section .wpcf7-form .wpcf7-response-output {
+  margin-top: 15px;
+  padding: 10px;
+  border-radius: 20px;
+  font-size: 16px;
+  color: white;
+  background-color: #28a745;
+}
+
 .contact-text {
   max-width: 480px;
 }
@@ -530,7 +532,7 @@
   color: #FFFFFF;
 }
 .contact-text .header-contact-item li .header-contact-title {
-  color: #4375B5;
+  color: #4375b5;
   font-size: 16px;
 }
 .contact-text p {
@@ -597,7 +599,7 @@
 }
 .container .text-wrapper .kancelaria {
   font-size: 40px;
-  color: #4375B5;
+  color: #4375b5;
   font-weight: 400;
 }
 .container .text-wrapper .jan-mazan {
