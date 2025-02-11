@@ -1,69 +1,77 @@
-.container {
-    width: 100%;
+.hero-container {
+  width: 100%;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  position: relative;
+  padding-top: 300px;
+  .image-wrapper {
     display: flex;
-    justify-content: space-between;
+    justify-content: center;
     align-items: center;
     position: relative;
-    
-    .image-wrapper {
-        display: flex;
-        justify-content: center;
-        align-items: center;
-        position: relative;
 
-        &.left {
-            left: 0;
+    &.left {
+      left: 0;
 
-            &::before {
-                content: "";
-                position: absolute;
-                top: 0;
-                bottom: 0;
-                right: 0;
-                width: 100%;
-                background: linear-gradient(90deg, rgba(37, 37, 37, 0) 0%, #252525 100%);
-                z-index: 1;
-            }
-        }
-
-        &.right {
-            right: 0;
-
-            &::after {
-                content: "";
-                position: absolute;
-                top: 0;
-                bottom: 0;
-                left: 0;
-                width: 100%;
-                background: linear-gradient(90deg, #252525 0%, rgba(37, 37, 37, 0) 100%);
-                z-index: 1;
-            }
-        }
-
-        .image {
-            max-width: 400px;
-            width: 100%;
-            height: auto;
-            object-fit: cover;
-        }
+      &::before {
+        content: "";
+        position: absolute;
+        top: 0;
+        bottom: 0;
+        right: 0;
+        width: 100%;
+        background: linear-gradient(
+          90deg,
+          rgba(37, 37, 37, 0) 0%,
+          #252525 100%
+        );
+        z-index: 1;
+      }
     }
 
-    .text-wrapper {
-        text-align: center;
-        z-index: 2;
+    &.right {
+      right: 0;
 
-        .kancelaria {
-            font-size: 40px;
-            color: $blue;
-            font-weight: 400;
-        }
-
-        .jan-mazan {
-            font-size: 80px;
-            color: #fff;
-            font-family: 'EB Garamond';
-            font-weight: 700;
-        }
+      &::after {
+        content: "";
+        position: absolute;
+        top: 0;
+        bottom: 0;
+        left: 0;
+        width: 100%;
+        background: linear-gradient(
+          90deg,
+          #252525 0%,
+          rgba(37, 37, 37, 0) 100%
+        );
+        z-index: 1;
+      }
     }
+
+    .image {
+      max-width: 400px;
+      width: 100%;
+      height: auto;
+      object-fit: cover;
+    }
+  }
+
+  .text-wrapper {
+    text-align: center;
+    z-index: 2;
+
+    .kancelaria {
+      font-size: 40px;
+      color: $blue;
+      font-weight: 400;
+    }
+
+    .jan-mazan {
+      font-size: 80px;
+      color: #fff;
+      font-family: "EB Garamond";
+      font-weight: 700;
+    }
+  }
 }

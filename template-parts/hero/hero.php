@@ -6,7 +6,7 @@ $kancelaria_text = get_field('kancelaria_text'); // Tekst "Kancelaria Notarialna
 $jan_mazan_text = get_field('jan_mazan_text');   // Tekst "Jan Mazan"
 ?>
 
-<div class="container">
+<div class="hero-container">
     <div class="image-wrapper left">
         <?php if ($left_image): ?>
             <img src="<?php echo esc_url($left_image['url']); ?>" alt="Left Image" class="image">

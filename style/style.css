@@ -412,22 +412,13 @@
 }
 
 .contact-form-section {
-  /* Całkowita szerokość kontenera formularza */
   width: 600px;
-  margin: 0 auto; /* Jeśli chcesz wycentrować sekcję */
+  margin: 0 auto;
 }
 .contact-form-section .wpcf7-form {
-  /* Ustawiamy formularz w kolumnie */
   display: flex;
   flex-direction: column;
-  gap: 10px; /* Odstępy pionowe między elementami formularza */
-  /* Podstawowe pola input (tekst, email, temat) */
-  /* Pole tekstowe (textarea) */
-  /* --- CHECKBOX --- */
-  /* CF7 owija checkbox w <span class="wpcf7-form-control-wrap" data-name="consent"> */
-  /* a sam input to <input type="checkbox"> oraz <span class="wpcf7-list-item-label">Tekst</span>. */
-  /* Poniżej stylujemy to dokładnie, by uzyskać efekt niestandardowego checkboxa. */
-  /* Zmiana układu dla formularza wysyłania */
+  gap: 10px;
 }
 .contact-form-section .wpcf7-form .wpcf7-form-control {
   width: 100%;
@@ -452,16 +443,15 @@
   color: #ffffff;
 }
 .contact-form-section .wpcf7-form textarea.wpcf7-form-control {
-  /* Nadpisuje height, bo textarea zwykle ma domyślną wysokość */
   height: auto;
   min-height: 222px;
   line-height: 1.5;
-  resize: vertical; /* Możliwość ręcznego rozciągania w pionie */
+  resize: vertical;
 }
 .contact-form-section .wpcf7-form p span.wpcf7-form-control-wrap[data-name=consent] {
   display: flex;
   align-items: center;
-  gap: 10px; /* Odstęp między kwadratem checkboxa a etykietą */
+  gap: 10px;
 }
 .contact-form-section .wpcf7-form p span.wpcf7-form-control-wrap[data-name=consent] input[type=checkbox] {
   appearance: none;
@@ -548,23 +538,24 @@
   margin-bottom: 25px;
 }
 
-.container {
+.hero-container {
   width: 100%;
   display: flex;
   justify-content: space-between;
   align-items: center;
   position: relative;
+  padding-top: 300px;
 }
-.container .image-wrapper {
+.hero-container .image-wrapper {
   display: flex;
   justify-content: center;
   align-items: center;
   position: relative;
 }
-.container .image-wrapper.left {
+.hero-container .image-wrapper.left {
   left: 0;
 }
-.container .image-wrapper.left::before {
+.hero-container .image-wrapper.left::before {
   content: "";
   position: absolute;
   top: 0;
@@ -574,10 +565,10 @@
   background: linear-gradient(90deg, rgba(37, 37, 37, 0) 0%, #252525 100%);
   z-index: 1;
 }
-.container .image-wrapper.right {
+.hero-container .image-wrapper.right {
   right: 0;
 }
-.container .image-wrapper.right::after {
+.hero-container .image-wrapper.right::after {
   content: "";
   position: absolute;
   top: 0;
@@ -587,22 +578,22 @@
   background: linear-gradient(90deg, #252525 0%, rgba(37, 37, 37, 0) 100%);
   z-index: 1;
 }
-.container .image-wrapper .image {
+.hero-container .image-wrapper .image {
   max-width: 400px;
   width: 100%;
   height: auto;
   object-fit: cover;
 }
-.container .text-wrapper {
+.hero-container .text-wrapper {
   text-align: center;
   z-index: 2;
 }
-.container .text-wrapper .kancelaria {
+.hero-container .text-wrapper .kancelaria {
   font-size: 40px;
   color: #4375b5;
   font-weight: 400;
 }
-.container .text-wrapper .jan-mazan {
+.hero-container .text-wrapper .jan-mazan {
   font-size: 80px;
   color: #fff;
   font-family: "EB Garamond";
@@ -768,6 +759,109 @@
   color: #fff;
 }
 
+.popup {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background-color: rgba(0, 0, 0, 0.4);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  z-index: 9999;
+  opacity: 0;
+  animation: fadeIn 0.2s forwards;
+}
+.popup .popup-content {
+  display: flex;
+  align-items: center;
+  background-color: #2b2b2b;
+  padding: 30px;
+  border-radius: 20px;
+  max-width: 980px;
+  width: 90%;
+  border: 2px solid #4375b5;
+  box-shadow: 0px 0px 30px 0px rgba(0, 0, 0, 0.4509803922);
+  position: relative;
+}
+.popup .popup-content .popup-left {
+  flex: 1;
+  padding: 20px;
+}
+.popup .popup-content .popup-left img {
+  width: 280px;
+}
+.popup .popup-content .popup-right {
+  flex: 2;
+  text-align: left;
+  padding: 20px;
+  display: flex;
+  flex-direction: column;
+}
+.popup .popup-content .popup-right .popup-title {
+  font-size: 28px;
+  font-weight: 800;
+  color: #fff;
+  margin-bottom: 10px;
+}
+.popup .popup-content .popup-right .popup-text {
+  font-size: 16px;
+  color: #fff;
+  font-family: "Montserrat";
+  margin-bottom: 22px;
+  font-weight: 400;
+}
+.popup .popup-content .popup-right .popup-text .highlight {
+  color: #49a6f2;
+  font-weight: 600;
+}
+.popup .popup-content .popup-right .popup-signature {
+  font-size: 16px;
+  text-align: right;
+  margin-top: auto;
+  font-weight: 400;
+  font-family: "Montserrat", sans-serif;
+  color: #fff;
+}
+.popup .popup-content .popup-right .popup-signature .name {
+  font-size: 30px;
+  font-weight: 700;
+  font-family: "Garamond";
+}
+.popup .popup-close {
+  position: absolute;
+  top: 15px;
+  right: 15px;
+  width: 28px;
+  height: 28px;
+  cursor: pointer;
+  transition: opacity 0.3s;
+}
+.popup .popup-close:hover {
+  opacity: 0.7;
+}
+
+@keyframes fadeIn {
+  from {
+    opacity: 0;
+  }
+  to {
+    opacity: 1;
+  }
+}
+.popup-hide {
+  animation: fadeOut 0.2s forwards;
+}
+
+@keyframes fadeOut {
+  from {
+    opacity: 1;
+  }
+  to {
+    opacity: 0;
+  }
+}
 body {
   background-color: #252525;
   font-family: "Montserrat", sans-serif;

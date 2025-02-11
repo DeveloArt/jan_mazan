@@ -22,6 +22,6 @@ get_header(); ?>
 <!-- Sekcja Kontakt -->
 <?php get_template_part('template-parts/contact/contact-section', 'main'); ?>
 
-<!-- Sekcja Stopka -->
-<!-- <?php get_template_part('template-parts/footer/footer', 'main'); ?> -->
+<?php get_template_part('template-parts/popup/popup', 'main'); ?>
+
 <?php get_footer(); ?>

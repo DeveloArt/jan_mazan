@@ -60,7 +60,57 @@ if (function_exists('acf_add_options_page')) {
 	));
 }
 
+function popup_settings_menu() {
+    add_menu_page(
+        'Popup Settings',         
+        'Popup Settings',     
+        'manage_options',     
+        'popup-settings',       
+        'popup_settings_page',    
+        'dashicons-testimonial',
+        20                          
+    );
+}
+add_action('admin_menu', 'popup_settings_menu');
 
+function popup_settings_page() {
+    if (!current_user_can('manage_options')) {
+        return;
+    }
+    $popup_text = get_option('popup_text', '');
+    $popup_active = get_option('popup_active', 0);
+
+    ?>
+    <div class="wrap">
+        <h1>Ustawienia Popupa</h1>
+        <form method="post" action="options.php">
+            <?php
+            settings_fields('popup_settings_group');
+            do_settings_sections('popup-settings');
+            ?>
+
+            <table class="form-table">
+                <tr>
+                    <th><label for="popup_text">Tekst Popupa:</label></th>
+                    <td><textarea id="popup_text" name="popup_text" rows="4" cols="50"><?php echo esc_textarea($popup_text); ?></textarea></td>
+                </tr>
+                <tr>
+                    <th><label for="popup_active">Aktywny:</label></th>
+                    <td><input type="checkbox" id="popup_active" name="popup_active" value="1" <?php checked(1, $popup_active); ?> /></td>
+                </tr>
+            </table>
+
+            <?php submit_button(); ?>
+        </form>
+    </div>
+    <?php
+}
+
+function popup_settings_init() {
+    register_setting('popup_settings_group', 'popup_text');
+    register_setting('popup_settings_group', 'popup_active');
+}
+add_action('admin_init', 'popup_settings_init');
 
 function my_theme_enqueue_styles()
 {
