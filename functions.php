@@ -6,6 +6,28 @@ require get_template_directory() . '/inc/custom-header.php';
 require get_template_directory() . '/inc/customizer.php';
 require get_template_directory() . '/inc/shortcodes.php';
 
+add_action('wpcf7_mail_sent', 'cf7_after_submission');
+function cf7_after_submission($contact_form) {
+    $submission = WPCF7_Submission::get_instance();
+    if ($submission) {
+        $data = $submission->get_posted_data();
+        error_log(print_r($data, true)); // Logowanie przesłanych danych
+    }
+}
+add_filter('wpcf7_form_elements', 'my_cf7_custom_button');
+function my_cf7_custom_button($form_html) {
+
+    // Buforujemy wynik funkcji render_custom_button()
+    ob_start();
+    // Używamy jej w trybie przycisku 'submit' => $is_submit = true
+    render_custom_button('Wyślij', '', true);
+    $custom_button_html = ob_get_clean();
+
+    // Podmieniamy domyślny shortcode CF7 [submit "Wyślij"] na nasz kod przycisku
+    $form_html = str_replace('[submit "Wyślij"]', $custom_button_html, $form_html);
+
+    return $form_html;
+}
 function my_theme_setup()
 {
 	add_theme_support('editor-styles');
