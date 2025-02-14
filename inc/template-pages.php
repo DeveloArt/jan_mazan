@@ -18,6 +18,7 @@ function get_template_mapping()
         'depozyt notarialny' => 'page-text-list-block.php',
         'sprawy spadkowe' => 'page-text-list-block.php',
         'dokumenty' => 'page-dokumenty.php',
+        'kontakt' => 'page-kontakt.php',
     ];
 }
 

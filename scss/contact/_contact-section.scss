@@ -1,10 +1,17 @@
 .contact-section {
-    display: flex;
-    flex-direction: row;
-    justify-content: center;
-    width: 100%;
-    padding: 76px 0;
-    gap: 20px;
-    background-color: $dark-blue;
-    color: $secondary;
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  width: 100%;
+  padding: 76px 0;
+  gap: 60px;
+  background-color: $dark-blue;
+  color: $secondary;
+
+  @media (max-width: 768px) {
+    flex-direction: column;
+    padding: 40px 0;
+    gap: 30px;
+    justify-content: flex-start;
+  }
 }

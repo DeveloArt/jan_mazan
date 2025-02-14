@@ -18,7 +18,7 @@ get_header(); ?>
 <!-- Sekcja Usługi -->
 <?php get_template_part('template-parts/charge/charge', 'main'); ?>
 
-<?php get_template_part('template-parts/section-documents/section-documents', 'main'); ?>
+<?php get_template_part('template-parts/section-document/section-documents', 'main'); ?>
 <!-- Sekcja Kontakt -->
 <?php get_template_part('template-parts/contact/contact-section', 'main'); ?>
 

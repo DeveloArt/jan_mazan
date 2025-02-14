@@ -12,30 +12,53 @@
     display: flex;
     justify-content: space-between;
     align-items: center;
-    padding: 0;
-    margin: 0 40px;
+    flex-wrap: wrap;
+    padding: 10px 0;
+    margin: 0;
     list-style: none;
     width: 100%;
+    gap: 10px;
+
+    @media (max-width: 768px) {
+      gap: 10px;
+      flex-direction: row;
+      justify-content: center;
+      padding: 0;
+    }
 
     li {
       color: $secondary;
-      font-size: 17px;
+      font-size: 16px;
       font-weight: 700;
-      
+      display: flex;
+      align-items: center;
+      white-space: nowrap;
+
+      &:nth-child(1) {
+        margin-right: 40px;
+      }
+
       .header-contact-title {
         color: $secondary;
         font-size: 16px;
         font-weight: 700;
         margin-right: 0.5rem;
-      }
-    }
 
-    @media (max-width: 768px) {
-      flex-direction: column;
-      align-items: flex-start;
+        .desktop-label {
+          display: inline;
+        }
+        .mobile-label {
+          display: none;
+        }
 
-      li {
-        margin-bottom: 0.5rem;
+        @media (max-width: 500px) {
+          .desktop-label {
+            display: none;
+          }
+          .mobile-label {
+            display: inline;
+          }
+        }
       }
     }
   }
