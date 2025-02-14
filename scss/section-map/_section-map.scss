@@ -1,0 +1,57 @@
+.map-section {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  color: #ddd; /* jasny kolor tekstu */
+  max-width: 1200px; /* szerokość maksymalna sekcji */
+  margin: 0 auto; /* wycentrowanie sekcji */
+  padding: 80px 20px; /* pionowe i poziome odstępy */
+
+  &__content {
+    flex: 1 1 50%;
+    padding-right: 40px; /* odstęp między tekstem a obrazem */
+
+    h2 {
+      font-size: 40px;
+      font-family: "EB Garamond";
+      margin-bottom: 20px;
+      color: #fff;
+      font-weight: 700;
+    }
+
+    p,
+    &__text {
+      font-size: 16px;
+      line-height: 1.6;
+      margin-bottom: 20px;
+      color: #ddd; /* dostosuj do tła */
+    }
+  }
+
+  &__image {
+    flex: 1 1 50%;
+    text-align: center;
+
+    img {
+      max-width: 100%;
+      height: auto;
+      display: inline-block;
+      border: none; /* usuń ramkę, jeśli jest */
+    }
+  }
+
+  /* Responsywność – na mniejszych ekranach */
+  @media (max-width: 768px) {
+    flex-direction: column;
+    padding: 40px 20px; /* zmniejszenie paddingu dla węższych urządzeń */
+
+    &__content {
+      padding-right: 0;
+      margin-bottom: 20px; /* odstęp pod tekstem, przed obrazem */
+    }
+
+    &__image {
+      margin: 0 auto;
+    }
+  }
+}

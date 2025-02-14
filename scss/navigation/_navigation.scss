@@ -40,7 +40,7 @@
           text-transform: uppercase;
           font-size: 16px;
           font-weight: 300;
-          font-family: 'Montserrat', sans-serif;
+          font-family: "Montserrat", sans-serif;
           transition: color 0.3s;
 
           &:hover {
@@ -50,7 +50,7 @@
 
         &.menu-item-has-children {
           > a::after {
-            content: '▼';
+            content: "▼";
             font-size: 10px;
             margin-left: 8px;
             color: #fff;
@@ -72,12 +72,13 @@
             left: -20px;
             width: 250px;
             z-index: 1000;
-
-            /* Ukrycie na start */
             opacity: 0;
             visibility: hidden;
             transform: translateY(-10px);
-            transition: opacity 0.3s ease, transform 0.3s ease, visibility 0.3s;
+            transition:
+              opacity 0.3s ease,
+              transform 0.3s ease,
+              visibility 0.3s;
 
             li {
               border-bottom: 1px solid #ffffff;
@@ -106,5 +107,169 @@
         }
       }
     }
+  }
+}
+
+@media (max-width: 768px) {
+  .main-navigation {
+    display: none;
+  }
+
+  .hamburger-menu {
+    display: block;
+    cursor: pointer;
+    z-index: 999;
+    margin-right: 20px;
+
+    span {
+      display: block;
+      width: 25px;
+      height: 3px;
+      background-color: white;
+      margin: 5px 0;
+    }
+  }
+
+  .mobile-navigation {
+    display: block;
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100vw;
+    max-width: 100%;
+    height: 100vh;
+    background-color: #222;
+    padding-top: 40px;
+    z-index: 1000;
+    overflow-y: auto;
+    box-sizing: border-box;
+    transition:
+      transform 0.3s ease,
+      opacity 0.3s ease;
+    transform: translateY(-100%);
+    opacity: 0;
+    pointer-events: none;
+
+    &.active {
+      transform: translateY(0);
+      opacity: 1;
+      pointer-events: auto;
+    }
+
+    .mobile-header {
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+      padding: 20px;
+      background-color: #222;
+      position: absolute;
+      top: 0;
+      left: 0;
+      width: 100%;
+      z-index: 9999;
+      box-sizing: border-box;
+
+      .site-logo {
+        height: 30px;
+        width: 100px;
+        margin-left: 20px;
+      }
+
+      .close-menu {
+        background: none;
+        border: none;
+        font-size: 30px;
+        color: white;
+        cursor: pointer;
+      }
+    }
+
+    .menu {
+      display: block;
+      list-style: none;
+      margin: 0;
+      padding: 0;
+      width: 100%;
+      max-width: 100%;
+      text-align: center;
+      box-sizing: border-box;
+
+      > li {
+        margin: 15px 0;
+        position: relative;
+
+        > a {
+          color: $blue;
+          text-transform: uppercase;
+          font-size: 18px;
+          font-weight: 700;
+          font-family: "Montserrat", sans-serif;
+          text-decoration: none;
+          display: block;
+          padding: 15px;
+          width: 100%;
+          box-sizing: border-box;
+        }
+
+        /* Submenu z animacją */
+        .sub-menu {
+          display: block;
+          max-height: 0;
+          overflow: hidden;
+          opacity: 0;
+          transform: translateY(-10px);
+          background-color: #222;
+          width: 100%;
+          z-index: 1000;
+          padding: 0;
+          list-style: none;
+          box-sizing: border-box;
+          transition:
+            max-height 0.3s ease,
+            opacity 0.3s ease,
+            transform 0.3s ease;
+
+          li {
+            border-bottom: 1px solid #ffffff;
+            margin: 0;
+
+            a {
+              font-size: 16px;
+              color: #fff;
+              padding: 15px;
+              text-align: center;
+              display: block;
+              text-decoration: none;
+
+              &:hover {
+                background-color: #444;
+              }
+            }
+          }
+
+          li:last-child {
+            border-bottom: none;
+          }
+        }
+
+        &.active {
+          .sub-menu {
+            max-height: 500px;
+            opacity: 1;
+            transform: translateY(0);
+          }
+        }
+      }
+    }
+  }
+}
+
+@media (min-width: 769px) {
+  .mobile-navigation {
+    display: none;
+  }
+
+  .hamburger-menu {
+    display: none;
   }
 }

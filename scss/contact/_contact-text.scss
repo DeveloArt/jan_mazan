@@ -1,35 +1,36 @@
 .contact-text {
-    max-width: 480px;
-    h2 {
-        font-size: 40px;
-        font-weight: 700;
-        margin-bottom: 25px;
-        font-family: 'EB Garamond';
+  max-width: 480px;
+  padding: 0 10px;
+  h2 {
+    font-size: 40px;
+    font-weight: 700;
+    margin-bottom: 25px;
+    font-family: "EB Garamond";
+  }
+  .header-contact-item {
+    text-transform: uppercase;
+    margin-bottom: 25px;
+    list-style: none;
+    li {
+      font-weight: 700;
+      color: $secondary;
+      .header-contact-title {
+        color: $blue;
+        font-size: 16px;
+      }
     }
-    .header-contact-item{
-        text-transform: uppercase;
-        margin-bottom: 25px;
-        list-style: none;
-        li{
-            font-weight: 700;
-            color: $secondary;
-            .header-contact-title {
-                color: $blue;
-                font-size: 16px;
-            }
-        }
-    }
-    p {
-        font-size: 1rem;
-        margin-bottom: 20px;
-    }
+  }
+  p {
+    font-size: 1rem;
+    margin-bottom: 20px;
+  }
 
-    img {
-        width: 100%;
-        max-width: 600px;
-        height: 220px;
-        display: block;
-        border-radius: 8px;
-        margin-bottom: 25px;
-    }
+  img {
+    width: 100%;
+    max-width: 600px;
+    height: 220px;
+    display: block;
+    border-radius: 8px;
+    margin-bottom: 25px;
+  }
 }

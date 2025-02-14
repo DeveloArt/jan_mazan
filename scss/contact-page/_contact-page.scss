@@ -1,0 +1,96 @@
+.content-area {
+  padding-top: 220px;
+  padding-bottom: 130px;
+  background-color: #222;
+  color: #ddd;
+  box-sizing: border-box;
+
+  .contact-content {
+    max-width: 1200px;
+    margin: 0 auto;
+    padding: 60px;
+
+    h1 {
+      font-size: 2.5rem;
+      margin-bottom: 20px;
+      color: #fff;
+    }
+
+    p {
+      font-size: 16px;
+      line-height: 1.5;
+      margin-bottom: 20px;
+      font-weight: 400;
+    }
+
+    .contact-info {
+      list-style: none;
+      padding: 0;
+      margin: 0;
+
+      .contact-info-item {
+        margin-bottom: 10px;
+        font-size: 16px;
+        line-height: 1.5;
+
+        .contact-label {
+          font-weight: 700;
+          text-transform: uppercase;
+          margin-right: 10px;
+          color: $blue;
+        }
+        .contact-text {
+          color: #fff;
+          font-size: 16px;
+          font-weight: 700;
+        }
+
+        a {
+          color: #bbb;
+          text-decoration: none;
+          transition: color 0.3s ease;
+
+          &:hover {
+            color: #fff;
+          }
+        }
+      }
+    }
+  }
+
+  .map-section-container {
+    background-color: $dark-blue;
+    width: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+  }
+
+  .open-hours-container {
+    padding: 130px 0;
+    background-color: $primary;
+  }
+
+  .contact-form-container {
+    background-color: $dark-blue;
+    color: #fff;
+    padding: 60px 20px;
+
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+
+    > * {
+      max-width: 1000px;
+      width: 100%;
+    }
+
+    h2 {
+      text-align: left;
+      margin-bottom: 20px;
+      margin-left: 10px;
+      font-size: 40px;
+      font-family: "EB Garamond";
+    }
+  }
+}
