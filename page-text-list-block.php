@@ -20,7 +20,6 @@ get_header();
             'additional_class' => $additional_class
         ]);
         ?>
-        <h1>dupa</h1>
         <?php
         $title = get_field("tytul_bloku_1");
         $description = get_field("tresc_bloku_1");
