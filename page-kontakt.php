@@ -33,6 +33,7 @@ get_header();
             <?php endif; ?>
         </ul>
     </div>
+        <?php get_template_part('template-parts/contact/contact-notice'); ?>
 	<div class="map-section-container">
 		<?php get_template_part('template-parts/section-map/section-map', 'map'); ?>
 	</div>
