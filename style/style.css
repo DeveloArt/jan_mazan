@@ -1161,6 +1161,47 @@
   margin-bottom: 10px;
 }
 
+@media (max-width: 768px) {
+  .questionnaire-section {
+    display: flex;
+    flex-direction: column;
+  }
+  .questionnaire-section .questionnaire-container {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+  }
+  .questionnaire-section .section-title {
+    font-size: 30px;
+    font-family: "EB Garamond";
+    line-height: 32.2px;
+    text-align: center;
+  }
+  .questionnaire-section .section-description {
+    font-size: 1rem;
+    font-weight: 400;
+    line-height: 19.5px;
+  }
+  .questionnaire-section .file-list {
+    width: 200px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+  }
+  .questionnaire-section .file-list .file-item {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+  }
+  .questionnaire-section .file-list .file-name {
+    font-weight: 700;
+    line-height: 19.5px;
+    text-align: center;
+  }
+}
 .questionnaire-section {
   padding: 50px 20px;
   color: #fff;
@@ -1181,7 +1222,7 @@
   color: #fff;
 }
 .questionnaire-section .content .section-description {
-  font-size: 16px;
+  font-size: 1rem;
   margin-bottom: 30px;
   line-height: 1.6;
   color: #d3d3d3;
@@ -1190,16 +1231,40 @@
   text-align: center;
 }
 .questionnaire-section .file-item .file-icon {
-  width: 80px;
+  width: 60px;
   height: auto;
   margin: 0 auto 10px;
 }
 .questionnaire-section .file-item .file-name {
-  font-size: 16px;
+  font-size: 1rem;
   margin-bottom: 15px;
   color: #fff;
 }
 
+@media (max-width: 768px) {
+  .questionnaire-section .content .section-title {
+    font-size: 30px;
+    font-family: "EB Garamond";
+    line-height: 32.2px;
+    text-align: center;
+  }
+  .questionnaire-section .content .section-description {
+    font-size: 1rem;
+    font-weight: 400;
+    line-height: 19.5px;
+  }
+  .questionnaire-section .file-item {
+    width: 200px;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+  }
+  .questionnaire-section .file-item .file-name {
+    font-weight: 700;
+    line-height: 19.5px;
+    text-align: center;
+  }
+}
 .popup {
   position: fixed;
   top: 0;
