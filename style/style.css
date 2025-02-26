@@ -171,7 +171,7 @@
     /* Submenu z animacją */
   }
   .mobile-navigation .menu > li > a {
-    color: #4375B5;
+    color: #4375b5;
     text-transform: uppercase;
     font-size: 18px;
     font-weight: 700;
@@ -229,7 +229,7 @@
   }
 }
 .header-contact {
-  background-color: #28374A;
+  background-color: #28374a;
 }
 .header-contact .container {
   max-width: 1200px;
@@ -257,7 +257,7 @@
   }
 }
 .header-contact .header-contact-item li {
-  color: #FFFFFF;
+  color: #ffffff;
   font-size: 16px;
   font-weight: 700;
   display: flex;
@@ -268,7 +268,7 @@
   margin-right: 40px;
 }
 .header-contact .header-contact-item li .header-contact-title {
-  color: #FFFFFF;
+  color: #ffffff;
   font-size: 16px;
   font-weight: 700;
   margin-right: 0.5rem;
@@ -290,7 +290,7 @@
 
 .footer-wrapper {
   background-color: #252525;
-  color: #FFFFFF;
+  color: #ffffff;
   width: 100%;
   padding: 20px 0;
 }
@@ -326,11 +326,11 @@
 }
 .footer-wrapper .footer .footer-container .footer-contact .footer-contact-item .footer-label {
   font-weight: bold;
-  color: #4375B5;
+  color: #4375b5;
   margin-right: 5px;
 }
 .footer-wrapper .footer .footer-container .footer-contact .footer-contact-item a {
-  color: #FFFFFF;
+  color: #ffffff;
   text-decoration: none;
   transition: color 0.3s ease;
 }
@@ -340,7 +340,7 @@
 .footer-wrapper .footer .footer-copyright {
   padding-top: 10px;
   text-align: center;
-  color: #FFFFFF;
+  color: #ffffff;
   font-family: "Montserrat";
   font-size: 16px;
   font-weight: 700;
@@ -367,7 +367,7 @@
   justify-content: space-between;
   padding: 100px 0;
   background-color: #252525;
-  color: #FFFFFF;
+  color: #ffffff;
   max-width: 1200px;
   margin: 0 auto;
 }
@@ -428,7 +428,7 @@
   align-items: center;
   width: 100%;
   height: 40px;
-  background-color: #4375B5;
+  background-color: #4375b5;
   color: #fff;
   text-align: center;
   text-decoration: none;
@@ -447,7 +447,7 @@
 .notarial-container {
   padding: 60px 0;
   background-color: #252525;
-  color: #FFFFFF;
+  color: #ffffff;
   display: flex;
   justify-content: center;
 }
@@ -519,8 +519,8 @@
 }
 
 .charge-section {
-  background-color: #28374A;
-  color: #FFFFFF;
+  background-color: #28374a;
+  color: #ffffff;
   width: 100%;
   display: flex;
   justify-content: center;
@@ -617,7 +617,7 @@
   display: flex;
   justify-content: center;
   align-items: center;
-  color: #FFFFFF;
+  color: #ffffff;
 }
 .documents-section button {
   max-width: 220px;
@@ -654,8 +654,8 @@
   width: 100%;
   padding: 76px 0;
   gap: 60px;
-  background-color: #28374A;
-  color: #FFFFFF;
+  background-color: #28374a;
+  color: #ffffff;
 }
 @media (max-width: 768px) {
   .contact-section {
@@ -820,7 +820,7 @@
 }
 .contact-text .header-contact-item li {
   font-weight: 700;
-  color: #FFFFFF;
+  color: #ffffff;
 }
 .contact-text .header-contact-item li .header-contact-title {
   color: #4375b5;
@@ -839,6 +839,97 @@
   margin-bottom: 25px;
 }
 
+.contact-notice-container {
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  width: 100%;
+  padding: 76px 0;
+  gap: 60px;
+  background-color: #252525;
+  color: #ffffff;
+}
+
+.contact-page-notice-content {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  padding: 30px;
+  width: 90%;
+}
+
+.contact-page-notice-left {
+  width: 320px;
+  height: 320px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.contact-page-notice-left img {
+  max-width: 100%;
+  height: 100%;
+  height: auto;
+}
+
+.contact-page-notice-right {
+  text-align: left;
+  padding: 20px;
+  display: flex;
+  flex-direction: column;
+  width: 35%;
+}
+
+.contact-page-notice-title {
+  font-size: 40px;
+  font-weight: 700;
+  margin-bottom: 10px;
+  color: #ffffff;
+  font-family: "EB Garamond";
+}
+
+.contact-page-notice-text {
+  font-size: 1rem;
+  font-family: "Montserrat";
+  margin-bottom: 15px;
+  font-weight: 400;
+  line-height: 19.5px;
+}
+
+.contact-page-highlight {
+  font-size: 1rem;
+  color: #4375b5;
+  font-weight: 700;
+  font-family: "Montserrat";
+  line-height: 19.5px;
+}
+
+.contact-page-notice-signature {
+  font-size: 1rem;
+  text-align: right;
+  font-weight: 400;
+  font-family: "Montserrat";
+  line-height: 19.5px;
+}
+.contact-page-notice-signature .contact-page-name {
+  text-align: right;
+  font-size: 30px;
+  font-weight: 700;
+  font-family: "Garamond";
+  line-height: 32.2px;
+}
+
+@media (max-width: 768px) {
+  .contact-page-notice-content {
+    display: flex;
+    flex-direction: column;
+  }
+  .contact-page-notice-right {
+    width: 100%;
+  }
+  .contact-page-notice-right {
+    text-align: center;
+  }
+}
 .hero-container {
   width: 100%;
   display: flex;
@@ -955,7 +1046,7 @@
   display: flex;
   align-items: center;
   justify-content: center;
-  color: #FFFFFF;
+  color: #ffffff;
   padding: 70px 0;
   font-family: "Montserrat", sans-serif;
 }
@@ -963,7 +1054,7 @@
   background-color: #252525;
 }
 .text-block.blue-background {
-  background-color: #28374A;
+  background-color: #28374a;
 }
 .text-block .text-block-title {
   font-size: 28px;
@@ -985,7 +1076,7 @@
   display: flex;
   align-items: center;
   justify-content: center;
-  color: #FFFFFF;
+  color: #ffffff;
   padding: 70px 0;
   font-family: "Montserrat", sans-serif;
 }
@@ -993,7 +1084,7 @@
   background-color: #252525;
 }
 .text-list-block.background-blue {
-  background-color: #28374A;
+  background-color: #28374a;
 }
 .text-list-block.first-block {
   padding-top: 200px;
@@ -1034,7 +1125,7 @@
   background-color: #252525;
 }
 .questionnaire-section.blue-background {
-  background-color: #28374A;
+  background-color: #28374a;
 }
 .questionnaire-section .questionnaire-container {
   max-width: 1200px;
@@ -1265,7 +1356,7 @@
   color: #fff;
 }
 .content-area .map-section-container {
-  background-color: #28374A;
+  background-color: #28374a;
   width: 100%;
   display: flex;
   align-items: center;
@@ -1276,7 +1367,7 @@
   background-color: #252525;
 }
 .content-area .contact-form-container {
-  background-color: #28374A;
+  background-color: #28374a;
   color: #fff;
   padding: 60px 20px;
   display: flex;
