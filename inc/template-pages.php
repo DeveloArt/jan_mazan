@@ -10,7 +10,7 @@ function get_template_mapping()
     return [
         'Opłaty' => 'page-oplaty.php',
         'Nieruchomości' => 'page-nieruchomosci.php',
-        'najem okazjonalny' => 'page-text-list-block.php',
+        'najem okazjonalny' => 'page-najem-okaz-block.php',
         'prawo spolek' => 'page-text-list-block.php',
         'sprawy malzenskie' => 'page-text-list-block.php',
         'pelnomocnictwo' => 'page-text-list-block.php',
