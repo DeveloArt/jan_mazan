@@ -16,37 +16,41 @@
     margin: 0 auto;
     display: flex;
     flex-direction: column;
-  }
-
-  .section-title {
-    font-size: 32px;
-    font-weight: 700;
-    margin-bottom: 15px;
-  }
-
-  .section-description {
-    font-size: 18px;
-    margin-bottom: 30px;
-    line-height: 1.6;
-  }
-
-  .file-list {
-    display: flex;
-    justify-content: center;
-    gap: 20px;
-
-    .file-item {
-      text-align: center;
-
-      .file-icon {
-        width: 60px;
-        height: 60px;
-        margin-bottom: 10px;
+    .questionnaire-header {
+      max-width: 700px;
+      margin-bottom: 40px;
+      .section-title {
+        font-size: 32px;
+        font-weight: 700;
+        margin-bottom: 25px;
       }
 
-      .file-name {
+      .section-description {
         font-size: 16px;
-        margin-bottom: 10px;
+        margin-bottom: 40px;
+        font-weight: 400;
+      }
+    }
+    .file-list {
+      display: flex;
+      justify-content: center;
+      gap: 20px;
+
+      .file-item {
+        text-align: center;
+        width: 280px;
+
+        .file-icon {
+          width: 60px;
+          height: 60px;
+          margin-bottom: 10px;
+        }
+
+        .file-name {
+          font-size: 16px;
+          margin-bottom: 10px;
+          padding: 0 40px;
+        }
       }
     }
   }

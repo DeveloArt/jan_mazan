@@ -61,6 +61,21 @@
       font-family: "Montserrat";
       font-size: 16px;
       font-weight: 700;
+
+      p + p {
+        margin-top: 20px; // dodatkowy odstęp między akapitami
+      }
+
+      a {
+        color: $secondary;
+        text-decoration: none;
+        transition: color 0.3s ease;
+
+        &:hover {
+          text-decoration: underline;
+          color: $blue; // zmień kolor hover według potrzeb
+        }
+      }
     }
   }
 }
@@ -89,6 +104,7 @@
           text-align: center;
         }
       }
+
       .footer-copyright {
         line-height: $line-height-base;
       }

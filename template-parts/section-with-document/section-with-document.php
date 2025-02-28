@@ -17,13 +17,15 @@ get_template_part('template-parts/buttons/button');
 
 <section class="questionnaire-section <?php echo esc_attr($klasa_tla); ?>">
     <div class="questionnaire-container">
-        <?php if (!empty($args['tytul'])): ?>
-            <h2 class="section-title"><?php echo esc_html($args['tytul']); ?></h2>
-        <?php endif; ?>
-        
-        <?php if (!empty($args['opis'])): ?>
-            <p class="section-description"><?php echo esc_html($args['opis']); ?></p>
-        <?php endif; ?>
+        <div class="questionnaire-header">
+            <?php if (!empty($args['tytul'])): ?>
+                <h2 class="section-title"><?php echo esc_html($args['tytul']); ?></h2>
+            <?php endif; ?>
+            
+            <?php if (!empty($args['opis'])): ?>
+                <p class="section-description"><?php echo esc_html($args['opis']); ?></p>
+            <?php endif; ?>
+        </div>
 
         <?php if (!empty($args['pliki']) && is_array($args['pliki'])): ?>
             <div class="file-list">

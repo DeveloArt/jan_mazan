@@ -28,6 +28,7 @@
 		</div>
 		<div class="footer-copyright">
 			<p>Copyright © 2024 Jan maria Mazan</p>
+			<p><a href="/polityka-prywatnosci">Polityka prywatności</a></p>
 		</div>
 	</footer>
 </div>
