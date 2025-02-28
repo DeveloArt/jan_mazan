@@ -15,6 +15,12 @@ function cf7_after_submission($contact_form) {
     }
 }
 add_filter('wpcf7_form_elements', 'my_cf7_custom_button');
+
+function mytheme_add_svg_favicon() {
+    echo '<link rel="icon" href="' . get_template_directory_uri() . '/assets/favicon.svg" type="image/svg+xml">';
+}
+add_action('wp_head', 'mytheme_add_svg_favicon');
+
 function my_cf7_custom_button($form_html) {
     ob_start();
     render_custom_button('Wyślij', '', true);

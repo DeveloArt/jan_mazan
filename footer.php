@@ -27,6 +27,7 @@
 			</ul>
 		</div>
 		<div class="footer-copyright">
+			<p><a href="/polityka-prywatnosci">Polityka prywatności</a></p>
 			<p>COPYRIGHT © 2024 JAN MARIA MAZAN</p>
 		</div>
 	</footer>

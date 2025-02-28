@@ -11,85 +11,88 @@
   z-index: 9999;
   opacity: 0;
   animation: fadeIn 0.2s forwards;
+}
 
-  .popup-content {
-    display: flex;
-    align-items: center;
-    background-color: #2b2b2b;
-    padding: 30px;
-    border-radius: 20px;
-    max-width: 980px;
-    width: 90%;
-    border: 2px solid #4375b5;
-    box-shadow: 0px 0px 30px 0px #00000073;
+.popup-content {
+  display: flex;
+  align-items: center;
+  background-color: #2b2b2b;
+  padding: 30px;
+  border-radius: 20px;
+  max-width: 980px;
+  width: 90%;
+  border: 2px solid #4375b5;
+  box-shadow: 0px 0px 30px 0px #00000073;
+  position: relative;
+}
 
-    position: relative;
+.popup-content .popup-left {
+  flex: 1;
+  padding: 20px;
+  text-align: center; /* Obrazek będzie wycentrowany na wszystkich urządzeniach */
+}
 
-    .popup-left {
-      flex: 1;
-      padding: 20px;
+.popup-content .popup-left img {
+  width: 280px;
+  margin: 0 auto;
+}
 
-      img {
-        width: 280px;
-      }
-    }
+.popup-content .popup-right {
+  flex: 2;
+  text-align: left;
+  padding: 20px;
+  display: flex;
+  flex-direction: column;
+}
 
-    .popup-right {
-      flex: 2;
-      text-align: left;
-      padding: 20px;
-      display: flex;
-      flex-direction: column;
+.popup-content .popup-right .popup-title {
+  font-size: 28px;
+  font-weight: 800;
+  color: #fff;
+  margin-bottom: 10px;
+}
 
-      .popup-title {
-        font-size: 28px;
-        font-weight: 800;
-        color: #fff;
-        margin-bottom: 10px;
-      }
+.popup-content .popup-right .popup-text {
+  font-size: 16px;
+  color: #fff;
+  font-family: "Montserrat";
+  margin-bottom: 22px;
+  font-weight: 400;
+}
 
-      .popup-text {
-        font-size: 16px;
-        color: #fff;
-        font-family: "Montserrat";
-        margin-bottom: 22px;
-        font-weight: 400;
+.popup-content .popup-right .popup-text .highlight {
+  color: #49a6f2;
+  font-weight: 600;
+}
 
-        .highlight {
-          color: #49a6f2;
-          font-weight: 600;
-        }
-      }
+.popup-content .popup-right .popup-signature {
+  font-size: 16px;
+  text-align: right;
+  margin-top: auto;
+  font-weight: 400;
+  font-family: "Montserrat", sans-serif;
+  color: #fff;
+}
 
-      .popup-signature {
-        font-size: 16px;
-        text-align: right;
-        margin-top: auto;
-        font-weight: 400;
-        font-family: "Montserrat", sans-serif;
-        color: #fff;
-        .name {
-          font-size: 30px;
-          font-weight: 700;
-          font-family: "Garamond";
-        }
-      }
-    }
-  }
+.popup-content .popup-right .popup-signature .name {
+  font-size: 30px;
+  font-weight: 700;
+  font-family: "Garamond";
+  margin-top: 10px;
+}
 
-  .popup-close {
-    position: absolute;
-    top: 15px;
-    right: 15px;
-    width: 28px;
-    height: 28px;
-    cursor: pointer;
-    transition: opacity 0.3s;
+.popup-close {
+  position: absolute;
+  top: 15px;
+  right: 15px;
+  width: 28px;
+  height: 28px;
+  cursor: pointer;
+  transition: opacity 0.3s;
+}
 
-    &:hover {
-      opacity: 0.7;
-    }
-  }
+.popup-close:hover {
+  opacity: 0.7;
 }
 
 @keyframes fadeIn {
@@ -101,7 +104,7 @@
   }
 }
 
-// Animacja zamykania
+/* Animacja zamykania */
 .popup-hide {
   animation: fadeOut 0.2s forwards;
 }
@@ -112,5 +115,81 @@
   }
   to {
     opacity: 0;
+  }
+}
+
+/* Media queries dla urządzeń o szerokości do 768px */
+@media screen and (max-width: 768px) {
+  .popup-content {
+    padding: 20px;
+    max-width: 90%;
+  }
+
+  .popup-content .popup-left {
+    padding: 10px;
+  }
+
+  .popup-content .popup-left img {
+    width: 200px;
+  }
+
+  .popup-content .popup-right {
+    padding: 10px;
+  }
+
+  .popup-content .popup-right .popup-title {
+    font-size: 24px;
+  }
+
+  .popup-content .popup-right .popup-text {
+    font-size: 14px;
+    margin-bottom: 16px;
+  }
+
+  .popup-content .popup-right .popup-signature {
+    font-size: 14px;
+  }
+
+  .popup-content .popup-right .popup-signature .name {
+    font-size: 24px;
+  }
+}
+
+/* Media queries dla urządzeń mobilnych do 480px */
+@media screen and (max-width: 480px) {
+  .popup-content {
+    flex-direction: column;
+    padding: 15px;
+  }
+
+  .popup-content .popup-left,
+  .popup-content .popup-right {
+    padding: 10px;
+    width: 100%;
+  }
+
+  .popup-content .popup-left {
+    text-align: center; /* Wyśrodkowanie obrazka */
+  }
+
+  .popup-content .popup-left img {
+    width: 180px;
+    margin: 0 auto;
+  }
+
+  .popup-content .popup-right .popup-title {
+    font-size: 22px;
+  }
+
+  .popup-content .popup-right .popup-text {
+    font-size: 13px;
+  }
+
+  .popup-content .popup-right .popup-signature {
+    font-size: 13px;
+  }
+
+  .popup-content .popup-right .popup-signature .name {
+    font-size: 20px;
   }
 }

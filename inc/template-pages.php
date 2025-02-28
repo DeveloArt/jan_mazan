@@ -19,6 +19,7 @@ function get_template_mapping()
         'sprawy spadkowe' => 'page-text-list-block.php',
         'dokumenty' => 'page-dokumenty.php',
         'kontakt' => 'page-kontakt.php',
+        'Polityka prywatności' => 'page-polityka-prywatnosci.php',
     ];
 }
 

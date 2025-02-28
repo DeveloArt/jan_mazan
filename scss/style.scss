@@ -19,6 +19,9 @@
 @import "popup/popup";
 @import "contact-page/contact-page";
 @import "section-map/section-map";
+@import "privacy-policy/privacy-policy";
+@import url("https://fonts.googleapis.com/css2?family=EB+Garamond&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Montserrat&display=swap");
 
 body {
   background-color: $primary;
@@ -146,4 +149,12 @@ table {
 html {
   font-family: "Montserrat", sans-serif;
   background-color: $primary;
+}
+h1,
+h2 {
+  font-family: "EB Garamond", serif !important;
+}
+p {
+  line-height: 19.5px !important;
+  font-family: "montserrat" !important;
 }
