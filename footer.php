@@ -27,8 +27,8 @@
 			</ul>
 		</div>
 		<div class="footer-copyright">
-			<p>Copyright © 2024 Jan maria Mazan</p>
 			<p><a href="/polityka-prywatnosci">Polityka prywatności</a></p>
+			<p>COPYRIGHT © 2024 JAN MARIA MAZAN</p>
 		</div>
 	</footer>
 </div>
