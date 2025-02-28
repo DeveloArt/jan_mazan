@@ -511,14 +511,12 @@
 }
 
 .icon {
-  border-radius: 50%;
   margin: 0 auto 10px;
 }
 
 .icon img {
   width: 100%;
   height: 100%;
-  border-radius: 50%;
 }
 
 .title {
@@ -866,7 +864,7 @@
 
 @media (max-width: 768px) {
   .contact-text {
-    padding: 0 5px;
+    padding: 0 30px;
   }
   .contact-text h2 {
     font-size: 30px;
@@ -1178,6 +1176,10 @@
 
 @media (max-width: 768px) {
   .text-list-block.background-grey {
+    padding-left: 40px;
+    padding-right: 40px;
+  }
+  .text-list-block.background-blue {
     padding-left: 40px;
     padding-right: 40px;
   }
