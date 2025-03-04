@@ -834,15 +834,21 @@
   background-color: rgb(53.2217741935, 92.939516129, 143.7782258065);
 }
 .contact-form-section .wpcf7-form .wpcf7-not-valid {
-  border: 2px solid red;
+  border: 2px solid #ff6b6b;
+  background-color: rgba(255, 107, 107, 0.1);
+  font-family: "Montserrat", sans-serif;
+  font-size: 16px;
 }
 .contact-form-section .wpcf7-form .wpcf7-response-output {
-  margin-top: 15px;
+  color: #dc3232;
+  background: rgba(255, 107, 107, 0.1);
+  border-color: #ff6b6b !important;
   padding: 10px;
-  border-radius: 20px;
+  border-radius: 5px;
+  text-align: center;
+  font-weight: 500;
+  font-family: "Montserrat", sans-serif;
   font-size: 16px;
-  color: white;
-  background-color: #28a745;
 }
 
 @media (max-width: 768px) {
