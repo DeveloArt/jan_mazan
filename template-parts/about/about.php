@@ -1,4 +1,4 @@
-<section id="aboutMe">
+<section id="aboutMe"></section>
     <div class="about-me-section">
         <div class="about-me-text">
             <h2><?php echo esc_html(get_field('about_me_title')); ?></h2>
@@ -12,4 +12,3 @@
             <?php endif; ?>
         </div>
     </div>
-</section>
