@@ -2,7 +2,7 @@
   max-width: 480px;
   padding: 0 10px;
   h2 {
-    font-size: 40px;
+    font-size: $font-size-h2;
     font-weight: 700;
     margin-bottom: 25px;
     font-family: $font-family-title;
@@ -13,10 +13,11 @@
     list-style: none;
     li {
       font-weight: 700;
-      color: $secondary;
+      color: $color-secondary;
       .header-contact-title {
-        color: $blue;
+        color: $color-accent;
         font-size: $font-size-base;
+        line-height: $line-height-base;
       }
     }
   }
@@ -35,17 +36,17 @@
   }
 }
 
-@media (max-width: 768px) {
+@media (max-width: $breakpoint-md) {
   .contact-text {
-    padding: 0 30px;
+    padding: 0;
     h2 {
-      font-size: 30px;
-      line-height: 32.5px;
+      font-size: $font-size-h3;
+      line-height: $line-height-title;
       text-align: center;
     }
     p {
       font-weight: 400;
-      line-height: 19.5px;
+      line-height: $line-height-base;
     }
   }
 }

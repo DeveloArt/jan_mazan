@@ -5,10 +5,10 @@
   width: 100%;
   padding: 76px 0;
   gap: 60px;
-  background-color: $dark-blue;
-  color: $secondary;
+  background-color: $color-dark-blue;
+  color: $color-secondary;
 
-  @media (max-width: 768px) {
+  @media (max-width: $breakpoint-md) {
     flex-direction: column;
     padding: 40px 0;
     gap: 30px;
