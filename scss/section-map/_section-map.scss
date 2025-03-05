@@ -2,14 +2,14 @@
   display: flex;
   align-items: center;
   justify-content: space-between;
-  color: #ddd; /* jasny kolor tekstu */
-  max-width: 1200px; /* szerokość maksymalna sekcji */
-  margin: 0 auto; /* wycentrowanie sekcji */
-  padding: 80px 20px; /* pionowe i poziome odstępy */
+  color: $color-secondary;
+  max-width: 980px;
+  margin: 0 auto;
+  padding: 80px 20px;
 
   &__content {
     flex: 1 1 50%;
-    padding-right: 40px; /* odstęp między tekstem a obrazem */
+    padding-right: 40px;
 
     h2 {
       font-size: $font-size-h2;
@@ -25,7 +25,7 @@
       font-family: $font-family-base;
       line-height: 1.6;
       margin-bottom: 20px;
-      color: #ddd; /* dostosuj do tła */
+      color: $color-secondary;
     }
   }
 
@@ -37,18 +37,17 @@
       max-width: 100%;
       height: auto;
       display: inline-block;
-      border: none; /* usuń ramkę, jeśli jest */
+      border: none;
     }
   }
 
-  /* Responsywność – na mniejszych ekranach */
   @media (max-width: $breakpoint-md) {
     flex-direction: column;
-    padding: 40px 20px; /* zmniejszenie paddingu dla węższych urządzeń */
+    padding: 40px 20px;
 
     &__content {
       padding-right: 0;
-      margin-bottom: 20px; /* odstęp pod tekstem, przed obrazem */
+      margin-bottom: 20px;
 
       h2 {
         text-align: center;
