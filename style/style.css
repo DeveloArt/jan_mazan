@@ -222,7 +222,7 @@
     transform: translateY(0);
   }
 }
-@media (min-width: 769px) {
+@media (min-width: 768px) {
   .mobile-navigation {
     display: none;
   }
@@ -322,12 +322,12 @@
   margin-bottom: 40px;
 }
 .footer-wrapper .footer .footer-container .footer-contact .footer-contact-item {
-  font-size: 14px;
-  line-height: 1.6;
-  margin: 0 15px 8px 15px;
+  font-size: "Montserrat", sans-serif;
+  line-height: 19.5px;
+  margin-bottom: 8px;
+  font-weight: 700;
 }
 .footer-wrapper .footer .footer-container .footer-contact .footer-contact-item .footer-label {
-  font-weight: bold;
   color: #4375b5;
   margin-right: 5px;
 }
@@ -369,18 +369,18 @@
   }
   .footer-wrapper .footer .footer-container .footer-contact .footer-contact-item {
     margin: 5px 0;
-    font-size: "Montserrat";
-    line-height: 1.5;
+    font-size: "Montserrat", sans-serif;
+    line-height: 19.5px;
     font-weight: 700;
   }
   .footer-wrapper .footer .footer-container .footer-title {
-    font-family: "EB Garamond";
+    font-family: "EB Garamond", serif;
     font-size: 30px;
     line-height: 32.2px;
     text-align: center;
   }
   .footer-wrapper .footer .footer-copyright {
-    line-height: 1.5;
+    line-height: 19.5px;
   }
 }
 .about-me-section {
@@ -532,10 +532,15 @@
 }
 
 .title {
-  font-size: 1em;
+  font-size: 25px;
   margin-bottom: 10px;
 }
 
+@media (max-width: 768px) {
+  .notarial-title {
+    font-size: 30px;
+  }
+}
 .charge-section {
   background-color: #28374a;
   color: #ffffff;
@@ -583,7 +588,7 @@
   pointer-events: none;
 }
 .charge-section h2 {
-  font-family: "EB Garamond";
+  font-family: "EB Garamond", serif;
   font-size: 40px;
   font-weight: 700;
   margin-bottom: 20px;
@@ -591,9 +596,9 @@
 }
 .charge-section p {
   font-size: 16px;
-  line-height: 1.5;
+  line-height: 19.5px;
   margin-bottom: 20px;
-  font-family: "Montserrat";
+  font-family: "Montserrat", sans-serif;
   font-weight: 400;
 }
 @media (max-width: 768px) {
@@ -683,8 +688,8 @@
 }
 .documents-section p {
   font-size: 16px;
-  line-height: 1.5;
   margin-bottom: 20px;
+  font-weight: 400;
 }
 
 .contact-section {
@@ -863,7 +868,7 @@
   font-size: 40px;
   font-weight: 700;
   margin-bottom: 25px;
-  font-family: "EB Garamond";
+  font-family: "EB Garamond", serif;
 }
 .contact-text .header-contact-item {
   text-transform: uppercase;
@@ -877,6 +882,7 @@
 .contact-text .header-contact-item li .header-contact-title {
   color: #4375b5;
   font-size: 16px;
+  line-height: 19.5px;
 }
 .contact-text p {
   font-size: 1rem;
@@ -893,7 +899,7 @@
 
 @media (max-width: 768px) {
   .contact-text {
-    padding: 0 30px;
+    padding: 0;
   }
   .contact-text h2 {
     font-size: 30px;
@@ -950,31 +956,31 @@
   font-weight: 700;
   margin-bottom: 10px;
   color: #ffffff;
-  font-family: "EB Garamond";
+  font-family: "EB Garamond", serif;
 }
 
 .contact-page-notice-text {
   font-size: 16px;
-  font-family: "Montserrat";
+  font-family: "Montserrat", sans-serif;
   margin-bottom: 15px;
   font-weight: 400;
-  line-height: 1.5;
+  line-height: 19.5px;
 }
 
 .contact-page-highlight {
   font-size: 16px;
   color: #4375b5;
   font-weight: 700;
-  font-family: "Montserrat";
-  line-height: 1.5;
+  font-family: "Montserrat", sans-serif;
+  line-height: 19.5px;
 }
 
 .contact-page-notice-signature {
   font-size: 16px;
   text-align: right;
   font-weight: 400;
-  font-family: "Montserrat";
-  line-height: 1.5;
+  font-family: "Montserrat", sans-serif;
+  line-height: 19.5px;
 }
 .contact-page-notice-signature .contact-page-name {
   text-align: right;
@@ -1056,7 +1062,7 @@
 .hero-container .text-wrapper .jan-mazan {
   font-size: 80px;
   color: #fff;
-  font-family: "EB Garamond";
+  font-family: "EB Garamond", serif;
   font-weight: 700;
 }
 @media (max-width: 768px) {
@@ -1102,9 +1108,11 @@
     font-size: 30px;
     color: #4375b5;
     padding: 0 50px;
+    line-height: 30px;
   }
   .hero-container .text-wrapper .jan-mazan {
     font-size: 60px;
+    font-family: "EB Garamond", serif;
   }
 }
 
@@ -1133,10 +1141,10 @@
   font-weight: 400;
   line-height: 1.8;
   max-width: 700px;
-  font-family: "Montserrat";
+  font-family: "Montserrat", sans-serif;
 }
 .text-block.first-block {
-  padding-top: 200px;
+  padding-top: 100px;
 }
 
 @media (max-width: 768px) {
@@ -1149,7 +1157,7 @@
     font-size: 30px;
     line-height: 32.2px;
     text-align: center;
-    font-family: "EB Garamond";
+    font-family: "EB Garamond", serif;
   }
   .text-block .text-block-content {
     line-height: 19.5px;
@@ -1173,8 +1181,11 @@
 .text-list-block.background-blue {
   background-color: #28374a;
 }
+.text-list-block.background-blue .text-list-block__content {
+  min-width: 700px;
+}
 .text-list-block.first-block {
-  padding-top: 200px;
+  padding-top: 100px;
 }
 .text-list-block .text-list-block__title {
   font-size: 28px;
@@ -1183,7 +1194,7 @@
 }
 .text-list-block .text-list-block__content {
   font-size: 16px;
-  font-family: "Montserrat";
+  font-family: "Montserrat", sans-serif;
   font-weight: 400;
   max-width: 700px;
 }
@@ -1214,13 +1225,14 @@
     padding-right: 40px;
   }
   .text-list-block .text-list-block__title {
-    font-family: "EB Garamond";
+    font-family: "EB Garamond", serif;
     text-align: center;
     line-height: 32.2px;
     font-size: 30px;
   }
   .text-list-block .text-list-block__content {
-    line-height: 1.5;
+    line-height: 19.5px;
+    min-width: auto !important;
   }
 }
 .questionnaire-section {
@@ -1239,13 +1251,15 @@
   margin: 0 auto;
   display: flex;
   flex-direction: column;
+  justify-content: center;
+  align-items: center;
 }
 .questionnaire-section .questionnaire-container .questionnaire-header {
   max-width: 700px;
-  margin-bottom: 40px;
+  margin-bottom: 20px;
 }
 .questionnaire-section .questionnaire-container .questionnaire-header .section-title {
-  font-size: 32px;
+  font-size: 40px;
   font-weight: 700;
   margin-bottom: 25px;
 }
@@ -1287,14 +1301,14 @@
   }
   .questionnaire-section .section-title {
     font-size: 30px;
-    font-family: "EB Garamond";
+    font-family: "EB Garamond", serif;
     line-height: 32.2px;
     text-align: center;
   }
   .questionnaire-section .section-description {
     font-size: 16px;
     font-weight: 400;
-    line-height: 1.5;
+    line-height: 19.5px;
   }
   .questionnaire-section .file-list {
     width: 200px;
@@ -1311,7 +1325,7 @@
   }
   .questionnaire-section .file-list .file-name {
     font-weight: 700;
-    line-height: 1.5;
+    line-height: 19.5px;
     text-align: center;
   }
 }
@@ -1335,7 +1349,7 @@
   text-align: left;
 }
 .questionnaire-section .content .section-title {
-  font-size: 32px;
+  font-size: 40px;
   font-weight: 700;
   margin-bottom: 40px;
   color: #fff;
@@ -1378,14 +1392,14 @@
   }
   .questionnaire-section .content .section-title {
     font-size: 30px;
-    font-family: "EB Garamond";
+    font-family: "EB Garamond", serif;
     line-height: 32.2px;
     text-align: center;
   }
   .questionnaire-section .content .section-description {
     font-size: 16px;
     font-weight: 400;
-    line-height: 1.5;
+    line-height: 19.5px;
   }
   .questionnaire-section .file-item {
     width: 280px;
@@ -1395,7 +1409,7 @@
   }
   .questionnaire-section .file-item .file-name {
     font-weight: 700;
-    line-height: 1.5;
+    line-height: 19.5px;
     text-align: center;
   }
   .questionnaire-section .file-item .custom-button,
@@ -1483,7 +1497,7 @@
 .popup-content .popup-right .popup-signature .name {
   font-size: 30px;
   font-weight: 700;
-  font-family: "Garamond";
+  font-family: "Garamond", serif;
   margin-top: 10px;
 }
 
@@ -1601,7 +1615,6 @@
 }
 .content-area .contact-content p {
   font-size: 16px;
-  line-height: 1.5;
   margin-bottom: 20px;
   font-weight: 400;
 }
@@ -1618,7 +1631,6 @@
 .content-area .contact-content .contact-info .contact-info-item .contact-label {
   font-weight: 700;
   text-transform: uppercase;
-  margin-right: 10px;
   color: #4375b5;
 }
 .content-area .contact-content .contact-info .contact-info-item .contact-text {
@@ -1673,20 +1685,20 @@
   }
   .content-area .contact-content h1 {
     text-align: center;
-    font-family: "EB Garamond";
+    font-family: "EB Garamond", serif;
     font-size: 30px;
     font-weight: 700;
     line-height: 32.5px;
   }
   .content-area .contact-content p {
     font-weight: 400;
-    font-family: "Montserrat";
-    line-height: 1.5;
+    font-family: "Montserrat", sans-serif;
+    line-height: 19.5px;
   }
   .content-area .contact-content .contact-info .contact-info-item {
     margin-bottom: 15px;
-    line-height: 1.5;
-    font-family: "Montserrat";
+    line-height: 19.5px;
+    font-family: "Montserrat", sans-serif;
   }
   .content-area .contact-content .contact-info .contact-info-item .contact-label {
     margin-right: 0px;
@@ -1711,14 +1723,14 @@
 }
 .map-section__content h2 {
   font-size: 40px;
-  font-family: "EB Garamond";
+  font-family: "EB Garamond", serif;
   margin-bottom: 20px;
   color: #fff;
   font-weight: 700;
 }
 .map-section__content p, .map-section__content__text {
   font-size: 16px;
-  font-family: "Montserrat";
+  font-family: "Montserrat", sans-serif;
   line-height: 1.6;
   margin-bottom: 20px;
   color: #ddd; /* dostosuj do tła */
@@ -1749,7 +1761,7 @@
   }
   .map-section__content p {
     font-weight: 400;
-    line-height: 1.5;
+    line-height: 19.5px;
   }
   .map-section__image {
     margin: 0 auto;
@@ -1946,6 +1958,7 @@ html {
 h1,
 h2 {
   font-family: "EB Garamond", serif !important;
+  line-height: 42.2px !important;
 }
 
 p {

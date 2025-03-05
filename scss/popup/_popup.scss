@@ -70,14 +70,14 @@
   text-align: right;
   margin-top: auto;
   font-weight: 400;
-  font-family: "Montserrat", sans-serif;
+  font-family: $font-family-base;
   color: #fff;
 }
 
 .popup-content .popup-right .popup-signature .name {
   font-size: 30px;
   font-weight: 700;
-  font-family: "Garamond";
+  font-family: $font-family-signature;
   margin-top: 10px;
 }
 
@@ -119,7 +119,7 @@
 }
 
 /* Media queries dla urządzeń o szerokości do 768px */
-@media screen and (max-width: 768px) {
+@media screen and (max-width: $breakpoint-md) {
   .popup-content {
     padding: 20px;
     max-width: 90%;

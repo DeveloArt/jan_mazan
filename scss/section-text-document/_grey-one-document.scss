@@ -1,8 +1,8 @@
 .questionnaire-section {
   padding: 50px 20px;
   color: #fff;
-  font-family: "Montserrat", sans-serif;
-  background-color: $primary;
+  font-family: $font-family-base;
+  background-color: $color-primary;
   display: flex;
   justify-content: center;
   align-items: center;
@@ -19,9 +19,9 @@
     text-align: left;
 
     .section-title {
-      font-size: 32px;
+      font-size: 40px;
       font-weight: 700;
-      margin-bottom: 40px;
+      margin-bottom: $font-size-h2;
       color: #fff;
       line-height: 42px;
     }
@@ -62,7 +62,7 @@
   }
 }
 
-@media (max-width: 768px) {
+@media (max-width: $breakpoint-md) {
   .questionnaire-section {
     .container {
       flex-direction: column;
@@ -71,7 +71,7 @@
 
     .content {
       .section-title {
-        font-size: 30px;
+        font-size: $font-size-h3;
         font-family: $font-family-title;
         line-height: 32.2px;
         text-align: center;

@@ -12,7 +12,7 @@
     padding-right: 40px; /* odstęp między tekstem a obrazem */
 
     h2 {
-      font-size: 40px;
+      font-size: $font-size-h2;
       font-family: $font-family-title;
       margin-bottom: 20px;
       color: #fff;
@@ -42,7 +42,7 @@
   }
 
   /* Responsywność – na mniejszych ekranach */
-  @media (max-width: 768px) {
+  @media (max-width: $breakpoint-md) {
     flex-direction: column;
     padding: 40px 20px; /* zmniejszenie paddingu dla węższych urządzeń */
 

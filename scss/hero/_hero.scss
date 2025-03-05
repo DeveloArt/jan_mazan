@@ -63,22 +63,22 @@
     z-index: 2;
 
     .kancelaria {
-      font-size: 40px;
-      color: $blue;
+      font-size: $font-size-h2;
+      color: $color-accent;
       font-weight: 400;
       font-family: "Montserrat";
       margin-bottom: 40px;
     }
 
     .jan-mazan {
-      font-size: 80px;
+      font-size: $font-size-h1;
       color: #fff;
-      font-family: "EB Garamond";
+      font-family: $font-family-title;
       font-weight: 700;
     }
   }
 
-  @media (max-width: 768px) {
+  @media (max-width: $breakpoint-md) {
     flex-direction: column;
     padding-top: 100px;
 
@@ -128,13 +128,15 @@
       z-index: 3;
 
       .kancelaria {
-        font-size: 30px;
-        color: $blue;
+        font-size: $font-size-h3;
+        color: $color-accent;
         padding: 0 50px;
+        line-height: 30px;
       }
 
       .jan-mazan {
         font-size: 60px;
+        font-family: $font-family-title;
       }
     }
   }

@@ -3,8 +3,8 @@
   align-items: center;
   justify-content: space-between;
   padding: 100px 0;
-  background-color: $primary;
-  color: $secondary;
+  background-color: $color-primary;
+  color: $color-secondary;
   max-width: 1200px;
   margin: 0 auto;
 
@@ -14,7 +14,7 @@
     max-width: 480px;
 
     h2 {
-      font-size: 40px;
+      font-size: $font-size-h2;
       margin-bottom: 0.5em;
       font-weight: 700;
     }
@@ -32,7 +32,7 @@
     margin-left: 100px;
   }
 
-  @media (max-width: 768px) {
+  @media (max-width: $breakpoint-md) {
     flex-direction: column-reverse;
     padding: 50px 20px;
 
@@ -55,7 +55,7 @@
       padding-top: 20px;
 
       h2 {
-        font-size: 30px;
+        font-size: $font-size-h3;
         text-align: center;
       }
 

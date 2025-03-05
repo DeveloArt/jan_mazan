@@ -3,7 +3,7 @@ $placeholder-focus-color: #ffffff;
 $border-radius: 20px;
 $input-height: 54px;
 $textarea-min-height: 142px;
-$blue: #4375b5;
+$color-accent: #4375b5;
 $form-footer-gap: 10px;
 $button-width: 200px;
 $button-height: 44px;
@@ -29,7 +29,7 @@ $button-height: 44px;
       box-sizing: border-box;
       border: none;
       font-size: 18px;
-      font-family: "Montserrat", sans-serif;
+      font-family: $font-family-base;
       padding-left: 10px;
 
       &:focus {
@@ -114,8 +114,8 @@ $button-height: 44px;
           }
 
           &:checked {
-            background-color: $blue;
-            border-color: $blue;
+            background-color: $color-accent;
+            border-color: $color-accent;
 
             &::before {
               color: #fff;
@@ -125,7 +125,7 @@ $button-height: 44px;
 
         .wpcf7-list-item-label {
           font-size: 16px;
-          font-family: "Montserrat", sans-serif;
+          font-family: $font-family-base;
           margin-right: 10px;
           flex-wrap: wrap;
         }
@@ -138,10 +138,10 @@ $button-height: 44px;
         align-items: center;
         justify-content: center;
         padding: 0;
-        background-color: $blue;
+        background-color: $color-accent;
         color: #fff;
         font-size: 18px;
-        font-family: "Montserrat", sans-serif;
+        font-family: $font-family-base;
         border: none;
         border-radius: 40px;
         cursor: pointer;
@@ -149,7 +149,7 @@ $button-height: 44px;
         text-align: center;
 
         &:hover {
-          background-color: darken($blue, 10%);
+          background-color: darken($color-accent, 10%);
         }
       }
     }
@@ -169,7 +169,7 @@ $button-height: 44px;
   }
 }
 
-@media (max-width: 768px) {
+@media (max-width: $breakpoint-md) {
   .contact-form-section {
     .wpcf7-form {
       .form-footer {

@@ -3,16 +3,16 @@
   display: flex;
   align-items: center;
   justify-content: center;
-  color: $secondary;
+  color: $color-secondary;
   padding: 70px 0;
-  font-family: "Montserrat", sans-serif;
+  font-family: $font-family-base;
 
   &.grey-background {
-    background-color: $primary;
+    background-color: $color-primary;
   }
 
   &.blue-background {
-    background-color: $dark-blue;
+    background-color: $color-dark-blue;
   }
 
   .text-block-title {
@@ -30,24 +30,23 @@
   }
 
   &.first-block {
-    padding-top: 200px;
+    padding-top: 100px;
   }
 }
 
-@media (max-width: 768px) {
+@media (max-width: $breakpoint-md) {
   .text-block {
     text-align: left;
     padding-left: 40px;
     padding-right: 40px;
-
     .text-block-title {
-      font-size: 30px;
+      font-size: $font-size-h3;
       line-height: 32.2px;
       text-align: center;
       font-family: $font-family-title;
     }
     .text-block-content {
-      line-height: 19.5px;
+      line-height: $line-height-base;
     }
     &.first-block {
       padding-top: 100px;
