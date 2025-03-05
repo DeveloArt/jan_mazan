@@ -13,7 +13,7 @@ if (function_exists('get_field')) :
                 <h2><?php echo esc_html($title); ?></h2>
                 <p><?php echo esc_html($description); ?></p>
                 <div class="button-container">
-                    <?php render_custom_button(esc_html($button_text), esc_url($button_url)); ?>
+                    <?php render_custom_button(esc_html($button_text), false, esc_url($button_url)); ?>
                 </div>
             </div>
             <?php if ($image): ?>
