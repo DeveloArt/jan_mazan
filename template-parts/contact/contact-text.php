@@ -18,7 +18,7 @@ if (function_exists('get_field')) :
         <?php if ($image_url): ?>
             <img src="<?php echo esc_url($image_url); ?>" alt="<?php echo esc_attr($title); ?>">
         <?php endif; ?>
-        <?php render_custom_button(esc_html($button_text), esc_url($button_url)); ?>
+        <?php render_custom_button(esc_html($button_text), false, esc_url($button_url)); ?>
     </div>
 
 <?php endif; ?>
