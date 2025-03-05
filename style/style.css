@@ -1208,10 +1208,12 @@
 .text-list-block .text-list-block__content ol {
   list-style: decimal;
   padding-left: 40px;
+  text-indent: 20px;
 }
 .text-list-block .text-list-block__content ol.roman-list {
   list-style: upper-roman;
   padding-left: 40px;
+  text-indent: 20px;
 }
 .text-list-block .text-list-block__contentstrong {
   font-weight: 700;
