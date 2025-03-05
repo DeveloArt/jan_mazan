@@ -32,10 +32,15 @@
     font-weight: 400;
     max-width: 700px;
     line-height: 19.5px !important;
+    max-width: 700px;
     p {
       margin-bottom: 5px;
     }
-    ol.normal-list {
+    a {
+      color: $blue;
+      font-weight: 600;
+    }
+    ol {
       list-style: decimal;
       padding-left: 40px;
     }
