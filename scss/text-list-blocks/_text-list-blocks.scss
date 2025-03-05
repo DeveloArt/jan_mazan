@@ -3,20 +3,23 @@
   display: flex;
   align-items: center;
   justify-content: center;
-  color: $secondary;
+  color: $color-secondary;
   padding: 70px 0;
-  font-family: "Montserrat", sans-serif;
-
+  font-family: $font-family-base;
   &.background-grey {
-    background-color: $primary;
+    background-color: $color-primary;
   }
 
   &.background-blue {
-    background-color: $dark-blue;
+    background-color: $color-dark-blue;
+
+    .text-list-block__content {
+      min-width: 700px;
+    }
   }
 
   &.first-block {
-    padding-top: 200px;
+    padding-top: 100px;
   }
 
   .text-list-block__title {
@@ -65,7 +68,7 @@
   }
 }
 
-@media (max-width: 768px) {
+@media (max-width: $breakpoint-md) {
   .text-list-block {
     &.background-grey {
       padding-left: 40px;
@@ -79,10 +82,11 @@
       font-family: $font-family-title;
       text-align: center;
       line-height: 32.2px;
-      font-size: 30px;
+      font-size: $font-size-h3;
     }
     .text-list-block__content {
       line-height: $line-height-base;
+      min-width: auto !important;
     }
   }
 }

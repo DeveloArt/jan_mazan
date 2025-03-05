@@ -5,8 +5,8 @@
   width: 100%;
   padding: 76px 0;
   gap: 60px;
-  background-color: $primary;
-  color: $secondary;
+  background-color: $color-primary;
+  color: $color-secondary;
 }
 .contact-page-notice-content {
   display: flex;
@@ -37,10 +37,10 @@
 }
 
 .contact-page-notice-title {
-  font-size: 40px;
+  font-size: $font-size-h2;
   font-weight: 700;
   margin-bottom: 10px;
-  color: $secondary;
+  color: $color-secondary;
   font-family: $font-family-title;
 }
 
@@ -54,7 +54,7 @@
 
 .contact-page-highlight {
   font-size: $font-size-base;
-  color: $blue;
+  color: $color-accent;
   font-weight: 700;
   font-family: $font-family-base;
   line-height: $line-height-base;
@@ -69,14 +69,14 @@
 
   .contact-page-name {
     text-align: right;
-    font-size: 30px;
+    font-size: $font-size-h3;
     font-weight: 700;
     font-family: $font-family-signature;
     line-height: 32.2px;
   }
 }
 
-@media (max-width: 768px) {
+@media (max-width: $breakpoint-md) {
   .contact-page-notice-content {
     display: flex;
     flex-direction: column;

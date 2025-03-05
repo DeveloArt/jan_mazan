@@ -1,5 +1,5 @@
 .header-contact {
-  background-color: $dark-blue;
+  background-color: $color-dark-blue;
 
   .container {
     max-width: 1200px;
@@ -19,7 +19,7 @@
     width: 100%;
     gap: 10px;
 
-    @media (max-width: 768px) {
+    @media (max-width: $breakpoint-md) {
       gap: 10px;
       flex-direction: row;
       justify-content: center;
@@ -27,7 +27,7 @@
     }
 
     li {
-      color: $secondary;
+      color: $color-secondary;
       font-size: 16px;
       font-weight: 700;
       display: flex;
@@ -39,7 +39,7 @@
       }
 
       .header-contact-title {
-        color: $secondary;
+        color: $color-secondary;
         font-size: 16px;
         font-weight: 700;
         margin-right: 0.5rem;

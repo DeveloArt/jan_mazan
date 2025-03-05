@@ -1,14 +1,7 @@
-$primary: #252525;
-$secondary: #fff;
-$dark-blue: #28374a;
-$blue: #4375b5;
-$gray-background: #ececec;
-$font-size-base: 1rem;
-$font-size-large: 1.5rem;
-$padding-base: 0.5rem 1rem;
-$font-family-base: "Montserrat";
-$font-family-title: "EB Garamond";
-$font-family-signature: "Garamond";
+$font-family-base: "Montserrat", sans-serif;
+$font-family-title: "EB Garamond", serif;
+$font-family-signature: "Garamond", serif;
+
 $line-height-base: 19.5px;
 $line-height-title: 32.5px;
 
@@ -20,6 +13,8 @@ $color-gray-bg: #ececec;
 $color-background: #f8f8f8;
 $color-border: #dcdcdc;
 $color-alert: #dc3232;
+$placeholder-color: #888888;
+$placeholder-focus-color: $color-secondary;
 
 $font-size-base: 16px;
 $font-size-h1: 80px;
@@ -27,18 +22,11 @@ $font-size-h2: 40px;
 $font-size-h3: 30px;
 $font-size-h4: 25px;
 
-$font-family-body: "Montserrat", sans-serif;
-$font-family-heading: "EB Garamond", serif;
-$font-family-signature: "Garamond", serif;
-
 $padding-base: 8px 16px;
 $padding-small: 4px 8px;
 $padding-large: 16px 32px;
 
-$line-height-base: 1.5;
-$line-height-heading: 1.3;
-
 $breakpoint-sm: 576px;
 $breakpoint-md: 768px;
 $breakpoint-lg: 992px;
-$breakpoint-xl: 1200px;
+$breakpoint-xl: 1024px;
