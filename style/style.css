@@ -52,11 +52,7 @@
   color: #fff;
   transition: transform 0.3s;
 }
-.site-header
-  .main-navigation
-  .menu
-  > li.menu-item-has-children:hover
-  > a::after {
+.site-header .main-navigation .menu > li.menu-item-has-children:hover > a::after {
   transform: rotate(180deg);
 }
 .site-header .main-navigation .menu > li.menu-item-has-children .sub-menu {
@@ -73,10 +69,7 @@
   opacity: 0;
   visibility: hidden;
   transform: translateY(-10px);
-  transition:
-    opacity 0.3s ease,
-    transform 0.3s ease,
-    visibility 0.3s;
+  transition: opacity 0.3s ease, transform 0.3s ease, visibility 0.3s;
 }
 .site-header .main-navigation .menu > li.menu-item-has-children .sub-menu li {
   border-bottom: 1px solid #ffffff;
@@ -90,19 +83,10 @@
   color: #fff;
   font-size: 14px;
 }
-.site-header
-  .main-navigation
-  .menu
-  > li.menu-item-has-children
-  .sub-menu
-  li:last-child {
+.site-header .main-navigation .menu > li.menu-item-has-children .sub-menu li:last-child {
   border-bottom: none;
 }
-.site-header
-  .main-navigation
-  .menu
-  > li.menu-item-has-children:hover
-  > .sub-menu {
+.site-header .main-navigation .menu > li.menu-item-has-children:hover > .sub-menu {
   opacity: 1;
   visibility: visible;
   transform: translateY(0);
@@ -138,9 +122,7 @@
     z-index: 1000;
     overflow-y: auto;
     box-sizing: border-box;
-    transition:
-      transform 0.3s ease,
-      opacity 0.3s ease;
+    transition: transform 0.3s ease, opacity 0.3s ease;
     transform: translateY(-100%);
     opacity: 0;
     pointer-events: none;
@@ -214,10 +196,7 @@
     padding: 0;
     list-style: none;
     box-sizing: border-box;
-    transition:
-      max-height 0.3s ease,
-      opacity 0.3s ease,
-      transform 0.3s ease;
+    transition: max-height 0.3s ease, opacity 0.3s ease, transform 0.3s ease;
   }
   .mobile-navigation .menu > li .sub-menu li {
     border-bottom: 1px solid #ffffff;
@@ -347,32 +326,17 @@
   line-height: 1.6;
   margin: 0 15px 8px 15px;
 }
-.footer-wrapper
-  .footer
-  .footer-container
-  .footer-contact
-  .footer-contact-item
-  .footer-label {
+.footer-wrapper .footer .footer-container .footer-contact .footer-contact-item .footer-label {
   font-weight: bold;
   color: #4375b5;
   margin-right: 5px;
 }
-.footer-wrapper
-  .footer
-  .footer-container
-  .footer-contact
-  .footer-contact-item
-  a {
+.footer-wrapper .footer .footer-container .footer-contact .footer-contact-item a {
   color: #ffffff;
   text-decoration: none;
   transition: color 0.3s ease;
 }
-.footer-wrapper
-  .footer
-  .footer-container
-  .footer-contact
-  .footer-contact-item
-  a:hover {
+.footer-wrapper .footer .footer-container .footer-contact .footer-contact-item a:hover {
   text-decoration: underline;
 }
 .footer-wrapper .footer .footer-copyright {
@@ -403,11 +367,7 @@
   .footer-wrapper .footer .footer-container .footer-contact {
     flex-direction: column;
   }
-  .footer-wrapper
-    .footer
-    .footer-container
-    .footer-contact
-    .footer-contact-item {
+  .footer-wrapper .footer .footer-container .footer-contact .footer-contact-item {
     margin: 5px 0;
     font-size: "Montserrat";
     line-height: 1.5;
@@ -806,29 +766,18 @@
 .contact-form-section .wpcf7-form .form-footer > p br {
   display: none;
 }
-.contact-form-section
-  .wpcf7-form
-  .form-footer
-  .wpcf7-form-control-wrap[data-name="consent"] {
+.contact-form-section .wpcf7-form .form-footer .wpcf7-form-control-wrap[data-name=consent] {
   display: inline-flex;
   align-items: center;
   gap: 10px;
 }
-.contact-form-section
-  .wpcf7-form
-  .form-footer
-  .wpcf7-form-control-wrap[data-name="consent"]
-  .wpcf7-list-item {
+.contact-form-section .wpcf7-form .form-footer .wpcf7-form-control-wrap[data-name=consent] .wpcf7-list-item {
   display: inline-flex;
   align-items: center;
   gap: 10px;
   margin: 0;
 }
-.contact-form-section
-  .wpcf7-form
-  .form-footer
-  .wpcf7-form-control-wrap[data-name="consent"]
-  input[type="checkbox"] {
+.contact-form-section .wpcf7-form .form-footer .wpcf7-form-control-wrap[data-name=consent] input[type=checkbox] {
   flex-shrink: 0;
   appearance: none;
   width: 40px;
@@ -838,15 +787,9 @@
   border-radius: 10px;
   position: relative;
   cursor: pointer;
-  transition:
-    background-color 0.3s,
-    border-color 0.3s;
+  transition: background-color 0.3s, border-color 0.3s;
 }
-.contact-form-section
-  .wpcf7-form
-  .form-footer
-  .wpcf7-form-control-wrap[data-name="consent"]
-  input[type="checkbox"]::before {
+.contact-form-section .wpcf7-form .form-footer .wpcf7-form-control-wrap[data-name=consent] input[type=checkbox]::before {
   content: "✔";
   position: absolute;
   top: 50%;
@@ -856,26 +799,14 @@
   color: transparent;
   transition: color 0.3s;
 }
-.contact-form-section
-  .wpcf7-form
-  .form-footer
-  .wpcf7-form-control-wrap[data-name="consent"]
-  input[type="checkbox"]:checked {
+.contact-form-section .wpcf7-form .form-footer .wpcf7-form-control-wrap[data-name=consent] input[type=checkbox]:checked {
   background-color: #4375b5;
   border-color: #4375b5;
 }
-.contact-form-section
-  .wpcf7-form
-  .form-footer
-  .wpcf7-form-control-wrap[data-name="consent"]
-  input[type="checkbox"]:checked::before {
+.contact-form-section .wpcf7-form .form-footer .wpcf7-form-control-wrap[data-name=consent] input[type=checkbox]:checked::before {
   color: #fff;
 }
-.contact-form-section
-  .wpcf7-form
-  .form-footer
-  .wpcf7-form-control-wrap[data-name="consent"]
-  .wpcf7-list-item-label {
+.contact-form-section .wpcf7-form .form-footer .wpcf7-form-control-wrap[data-name=consent] .wpcf7-list-item-label {
   font-size: 16px;
   font-family: "Montserrat", sans-serif;
   margin-right: 10px;
@@ -914,12 +845,7 @@
 }
 
 @media (max-width: 768px) {
-  .contact-form-section
-    .wpcf7-form
-    .form-footer
-    .wpcf7-form-control-wrap[data-name="consent"]
-    .wpcf7-list-item
-    .wpcf7-list-item-label {
+  .contact-form-section .wpcf7-form .form-footer .wpcf7-form-control-wrap[data-name=consent] .wpcf7-list-item .wpcf7-list-item-label {
     font-size: 10px;
     font-weight: 400;
     line-height: 12.9px;
@@ -1152,12 +1078,7 @@
     left: 0;
     width: 100%;
     height: 100%;
-    background: linear-gradient(
-      33.95deg,
-      #252525 0%,
-      rgba(37, 37, 37, 0.7) 43.23%,
-      rgba(37, 37, 37, 0.9) 87.62%
-    );
+    background: linear-gradient(33.95deg, #252525 0%, rgba(37, 37, 37, 0.7) 43.23%, rgba(37, 37, 37, 0.9) 87.62%);
     z-index: 2;
   }
   .hero-container .image-wrapper .image {
@@ -1182,6 +1103,7 @@
   }
   .hero-container .text-wrapper .jan-mazan {
     font-size: 60px;
+    line-height: 61px !important;
   }
 }
 
@@ -1201,9 +1123,10 @@
   background-color: #28374a;
 }
 .text-block .text-block-title {
-  font-size: 28px;
+  font-size: 40px;
   font-weight: 700;
   margin-bottom: 15px;
+  line-height: 42.2px;
 }
 .text-block .text-block-content {
   font-size: 16px;
@@ -1254,31 +1177,34 @@
   padding-top: 200px;
 }
 .text-list-block .text-list-block__title {
-  font-size: 28px;
+  font-size: 40px;
   font-weight: 700;
-  margin-bottom: 15px;
+  margin-bottom: 40px;
+  line-height: 42.2px;
 }
 .text-list-block .text-list-block__content {
   font-size: 16px;
   font-family: "Montserrat";
   font-weight: 400;
   max-width: 700px;
+  line-height: 19.5px !important;
 }
-.text-list-block .text-list-block__content ol.decimal-list {
+.text-list-block .text-list-block__content p {
+  margin-bottom: 5px;
+}
+.text-list-block .text-list-block__content ol.normal-list {
   list-style: decimal;
-  margin: 20px 0;
   padding-left: 40px;
 }
 .text-list-block .text-list-block__content ol.roman-list {
   list-style: upper-roman;
-  margin: 20px 0;
   padding-left: 40px;
 }
 .text-list-block .text-list-block__contentstrong {
   font-weight: 700;
 }
 .text-list-block .text-list-block__content li {
-  margin-bottom: 0;
+  margin-bottom: 5px;
 }
 
 @media (max-width: 768px) {
@@ -1321,18 +1247,12 @@
   max-width: 700px;
   margin-bottom: 40px;
 }
-.questionnaire-section
-  .questionnaire-container
-  .questionnaire-header
-  .section-title {
+.questionnaire-section .questionnaire-container .questionnaire-header .section-title {
   font-size: 32px;
   font-weight: 700;
   margin-bottom: 25px;
 }
-.questionnaire-section
-  .questionnaire-container
-  .questionnaire-header
-  .section-description {
+.questionnaire-section .questionnaire-container .questionnaire-header .section-description {
   font-size: 16px;
   margin-bottom: 40px;
   font-weight: 400;
@@ -1346,20 +1266,12 @@
   text-align: center;
   width: 280px;
 }
-.questionnaire-section
-  .questionnaire-container
-  .file-list
-  .file-item
-  .file-icon {
+.questionnaire-section .questionnaire-container .file-list .file-item .file-icon {
   width: 60px;
   height: 60px;
   margin-bottom: 10px;
 }
-.questionnaire-section
-  .questionnaire-container
-  .file-list
-  .file-item
-  .file-name {
+.questionnaire-section .questionnaire-container .file-list .file-item .file-name {
   font-size: 16px;
   margin-bottom: 10px;
   padding: 0 40px;
@@ -1676,8 +1588,8 @@
 .content-area {
   padding-top: 220px;
   padding-bottom: 130px;
-  background-color: #222;
-  color: #ddd;
+  background-color: #252525;
+  color: #ffffff;
   box-sizing: border-box;
 }
 .content-area .contact-content {
@@ -1688,7 +1600,7 @@
 .content-area .contact-content h1 {
   font-size: 2.5rem;
   margin-bottom: 20px;
-  color: #fff;
+  color: #ffffff;
 }
 .content-area .contact-content p {
   font-size: 16px;
@@ -1713,7 +1625,7 @@
   color: #4375b5;
 }
 .content-area .contact-content .contact-info .contact-info-item .contact-text {
-  color: #fff;
+  color: #ffffff;
   font-size: 16px;
   font-weight: 700;
 }
@@ -1723,7 +1635,7 @@
   transition: color 0.3s ease;
 }
 .content-area .contact-content .contact-info .contact-info-item a:hover {
-  color: #fff;
+  color: #ffffff;
 }
 .content-area .map-section-container {
   background-color: #28374a;
@@ -1779,11 +1691,7 @@
     line-height: 1.5;
     font-family: "Montserrat";
   }
-  .content-area
-    .contact-content
-    .contact-info
-    .contact-info-item
-    .contact-label {
+  .content-area .contact-content .contact-info .contact-info-item .contact-label {
     margin-right: 0px;
   }
   .content-area .open-hours-container {
@@ -1811,8 +1719,7 @@
   color: #fff;
   font-weight: 700;
 }
-.map-section__content p,
-.map-section__content__text {
+.map-section__content p, .map-section__content__text {
   font-size: 16px;
   font-family: "Montserrat";
   line-height: 1.6;

@@ -71,7 +71,7 @@
 
     .jan-mazan {
       font-size: 80px;
-      color: #fff;
+      color: $color-secondary;
       font-family: "EB Garamond";
       font-weight: 700;
     }
@@ -134,6 +134,7 @@
 
       .jan-mazan {
         font-size: 60px;
+        line-height: 61px !important;
       }
     }
   }

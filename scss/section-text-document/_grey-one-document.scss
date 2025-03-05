@@ -1,6 +1,6 @@
 .questionnaire-section {
   padding: 50px 20px;
-  color: #fff;
+  color: $color-secondary;
   font-family: "Montserrat", sans-serif;
   background-color: $primary;
   display: flex;
@@ -22,7 +22,7 @@
       font-size: 32px;
       font-weight: 700;
       margin-bottom: 40px;
-      color: #fff;
+      color: $color-secondary;
       line-height: 42px;
     }
 
@@ -51,7 +51,7 @@
     .file-name {
       font-size: $font-size-base;
       margin-bottom: 15px;
-      color: #fff;
+      color: $color-secondary;
     }
 
     .custom-button,

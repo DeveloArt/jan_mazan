@@ -11,7 +11,7 @@ function get_template_mapping()
         'Opłaty' => 'page-oplaty.php',
         'Nieruchomości' => 'page-nieruchomosci.php',
         'najem okazjonalny' => 'page-najem-okaz-block.php',
-        'prawo spolek' => 'page-text-list-block.php',
+        'prawo spolek' => 'page-prawo-spolek.php',
         'sprawy malzenskie' => 'page-text-list-block.php',
         'pelnomocnictwo' => 'page-text-list-block.php',
         'poswiadczenie' => 'page-text-list-block.php',
