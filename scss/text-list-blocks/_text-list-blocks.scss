@@ -36,24 +36,32 @@
     max-width: 700px;
     line-height: 19.5px !important;
     max-width: 700px;
+
     p {
       margin-bottom: 5px;
     }
+
     a {
-      color: $blue;
+      color: $color-accent;
       font-weight: 600;
     }
+
     ol {
       list-style: decimal;
       padding-left: 40px;
+      text-indent: 20px; // Wcięcie jak dla akapitu
     }
+
     ol.roman-list {
       list-style: upper-roman;
       padding-left: 40px;
+      text-indent: 20px; // Wcięcie jak dla akapitu
     }
+
     &strong {
       font-weight: 700;
     }
+
     li {
       margin-bottom: 5px;
     }

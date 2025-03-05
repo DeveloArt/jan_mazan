@@ -1,9 +1,6 @@
-$placeholder-color: #888888;
-$placeholder-focus-color: $color-secondary;
 $border-radius: 20px;
 $input-height: 54px;
 $textarea-min-height: 142px;
-$color-accent: #4375b5;
 $form-footer-gap: 10px;
 $button-width: 200px;
 $button-height: 44px;
@@ -13,9 +10,11 @@ $button-height: 44px;
   padding: 0 10px;
 
   .wpcf7-form {
+    position: relative;
     display: flex;
     flex-direction: column;
     gap: 10px;
+    padding-top: 60px;
 
     > p {
       margin: 0;
@@ -54,6 +53,27 @@ $button-height: 44px;
       padding: 16px;
     }
 
+    .wpcf7-response-output {
+      position: absolute;
+      top: -20px;
+      left: 50%;
+      transform: translateX(-50%);
+      width: 90%;
+      max-width: 600px;
+      z-index: 100;
+      margin: 0 !important;
+      color: $color-alert;
+      background: rgba(255, 107, 107, 0.1);
+      border: 2px solid #ff6b6b !important;
+      padding: 10px;
+      border-radius: 5px;
+      text-align: center;
+      font-weight: 500;
+      font-family: "Montserrat", sans-serif;
+      font-size: $font-size-base;
+      pointer-events: none;
+    }
+
     .form-footer {
       display: flex;
       flex-direction: row !important;
@@ -68,7 +88,7 @@ $button-height: 44px;
         align-items: center;
         gap: $form-footer-gap;
         margin: 0;
-        padding: 0; // Dodane dla pewności usunięcia domyślnych marginesów/paddingów
+        padding: 0;
         min-height: $button-height;
       }
 
@@ -157,19 +177,7 @@ $button-height: 44px;
     .wpcf7-not-valid {
       border: 2px solid #ff6b6b;
       background-color: rgba(255, 107, 107, 0.1);
-      font-family: $font-family-body;
-      font-size: $font-size-base;
-    }
-
-    .wpcf7-response-output {
-      color: $color-alert;
-      background: rgba(255, 107, 107, 0.1);
-      border-color: #ff6b6b !important;
-      padding: 10px;
-      border-radius: 5px;
-      text-align: center;
-      font-weight: 500;
-      font-family: $font-family-body;
+      font-family: "Montserrat", sans-serif;
       font-size: $font-size-base;
     }
   }
@@ -178,6 +186,13 @@ $button-height: 44px;
 @media (max-width: $breakpoint-md) {
   .contact-form-section {
     .wpcf7-form {
+      padding-top: 40px; // Mniejszy padding dla mobile
+
+      .wpcf7-response-output {
+        top: 10px;
+        font-size: 14px !important;
+      }
+
       .form-footer {
         .wpcf7-form-control-wrap[data-name="consent"] {
           .wpcf7-list-item {
