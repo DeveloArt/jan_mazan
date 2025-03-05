@@ -186,7 +186,7 @@ $button-height: 44px;
 @media (max-width: $breakpoint-md) {
   .contact-form-section {
     .wpcf7-form {
-      padding-top: 40px; // Mniejszy padding dla mobile
+      padding-top: 40px;
 
       .wpcf7-response-output {
         top: 10px;

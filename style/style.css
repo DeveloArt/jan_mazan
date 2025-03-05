@@ -618,7 +618,7 @@
   }
   .charge-section .charge-section-container .charge-section-content {
     order: 1;
-    padding: 20px 10px;
+    padding: 20px 0;
     margin: 0;
     max-width: 100%;
     width: 100%;
@@ -927,7 +927,7 @@
 
 @media (max-width: 768px) {
   .contact-text {
-    padding: 0;
+    padding: 18px;
   }
   .contact-text h2 {
     font-size: 30px;
@@ -1240,12 +1240,21 @@
 .text-list-block .text-list-block__content ol {
   list-style: decimal;
   padding-left: 40px;
-  text-indent: 20px;
+  margin: 0;
+}
+.text-list-block .text-list-block__content ol li {
+  padding-left: 6px;
+  text-indent: 0;
+  margin-left: -15px;
 }
 .text-list-block .text-list-block__content ol.roman-list {
   list-style: upper-roman;
   padding-left: 40px;
-  text-indent: 20px;
+}
+.text-list-block .text-list-block__content ol.roman-list li {
+  padding-left: 6px;
+  text-indent: 0px;
+  margin-left: -15px;
 }
 .text-list-block .text-list-block__contentstrong {
   font-weight: 700;
