@@ -155,16 +155,22 @@ $button-height: 44px;
     }
 
     .wpcf7-not-valid {
-      border: 2px solid red;
+      border: 2px solid #ff6b6b;
+      background-color: rgba(255, 107, 107, 0.1);
+      font-family: $font-family-body;
+      font-size: $font-size-base;
     }
 
     .wpcf7-response-output {
-      margin-top: 15px;
+      color: $color-alert;
+      background: rgba(255, 107, 107, 0.1);
+      border-color: #ff6b6b !important;
       padding: 10px;
-      border-radius: $border-radius;
-      font-size: 16px;
-      color: white;
-      background-color: #28a745;
+      border-radius: 5px;
+      text-align: center;
+      font-weight: 500;
+      font-family: $font-family-body;
+      font-size: $font-size-base;
     }
   }
 }
