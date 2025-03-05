@@ -1,9 +1,8 @@
 <?php
-// Pobieramy obrazy i teksty z ACF
 $left_image = get_field('left_image');
 $right_image = get_field('right_image');
-$kancelaria_text = get_field('kancelaria_text'); // Tekst "Kancelaria Notarialna"
-$jan_mazan_text = get_field('jan_mazan_text');   // Tekst "Jan Mazan"
+$kancelaria_text = get_field('kancelaria_text');
+$jan_mazan_text = get_field('jan_mazan_text');
 ?>
 
 <div class="hero-container">

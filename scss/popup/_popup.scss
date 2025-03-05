@@ -48,13 +48,13 @@
 .popup-content .popup-right .popup-title {
   font-size: 28px;
   font-weight: 800;
-  color: #fff;
+  color: $color-secondary;
   margin-bottom: 10px;
 }
 
 .popup-content .popup-right .popup-text {
   font-size: 16px;
-  color: #fff;
+  color: $color-secondary;
   font-family: "Montserrat";
   margin-bottom: 22px;
   font-weight: 400;
@@ -71,7 +71,7 @@
   margin-top: auto;
   font-weight: 400;
   font-family: $font-family-base;
-  color: #fff;
+  color: $color-secondary;
 }
 
 .popup-content .popup-right .popup-signature .name {

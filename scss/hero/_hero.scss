@@ -72,7 +72,7 @@
 
     .jan-mazan {
       font-size: $font-size-h1;
-      color: #fff;
+      color: $color-secondary;
       font-family: $font-family-title;
       font-weight: 700;
     }
@@ -135,8 +135,8 @@
       }
 
       .jan-mazan {
-        font-size: 60px;
         font-family: $font-family-title;
+        line-height: 61px !important;
       }
     }
   }
