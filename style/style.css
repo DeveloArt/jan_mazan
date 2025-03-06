@@ -92,7 +92,7 @@
   transform: translateY(0);
 }
 
-@media (max-width: 768px) {
+@media (max-width: 992px) {
   .main-navigation {
     display: none;
   }
@@ -222,7 +222,7 @@
     transform: translateY(0);
   }
 }
-@media (min-width: 768px) {
+@media (min-width: 992px) {
   .mobile-navigation {
     display: none;
   }
@@ -250,7 +250,7 @@
   width: 100%;
   gap: 10px;
 }
-@media (max-width: 768px) {
+@media (max-width: 992px) {
   .header-contact .header-contact-item {
     gap: 10px;
     flex-direction: row;
@@ -351,7 +351,7 @@
   margin-top: 20px;
 }
 
-@media (max-width: 768px) {
+@media (max-width: 992px) {
   .footer-wrapper .footer {
     padding: 0 20px;
   }
@@ -408,7 +408,7 @@
   flex: 0 0 360px;
   margin-left: 100px;
 }
-@media (max-width: 768px) {
+@media (max-width: 992px) {
   .about-me-section {
     flex-direction: column-reverse;
     padding: 50px 20px;
@@ -496,7 +496,7 @@
     grid-template-columns: repeat(3, 1fr);
   }
 }
-@media (max-width: 768px) {
+@media (max-width: 992px) {
   .notarial-actions {
     grid-template-columns: repeat(2, 1fr);
     margin-bottom: 60px;
@@ -534,7 +534,7 @@
   margin-bottom: 10px;
 }
 
-@media (max-width: 768px) {
+@media (max-width: 992px) {
   .notarial-title {
     font-size: 30px;
   }
@@ -599,7 +599,7 @@
   font-family: "Montserrat", sans-serif;
   font-weight: 400;
 }
-@media (max-width: 768px) {
+@media (max-width: 992px) {
   .charge-section {
     flex-direction: column;
     align-items: center;
@@ -679,7 +679,7 @@
   margin-bottom: 20px;
   font-weight: 700;
 }
-@media (max-width: 768px) {
+@media (max-width: 992px) {
   .documents-section h2 {
     font-size: 30px;
   }
@@ -700,7 +700,7 @@
   background-color: #28374a;
   color: #fff;
 }
-@media (max-width: 768px) {
+@media (max-width: 992px) {
   .contact-section {
     flex-direction: column;
     padding: 40px 0;
@@ -878,7 +878,7 @@
   font-size: 16px;
 }
 
-@media (max-width: 768px) {
+@media (max-width: 992px) {
   .contact-form-section .wpcf7-form {
     padding-top: 40px;
   }
@@ -932,7 +932,7 @@
   margin-bottom: 25px;
 }
 
-@media (max-width: 768px) {
+@media (max-width: 992px) {
   .contact-text {
     padding: 18px;
   }
@@ -1025,7 +1025,7 @@
   line-height: 32.2px;
 }
 
-@media (max-width: 768px) {
+@media (max-width: 992px) {
   .contact-page-notice-content {
     display: flex;
     flex-direction: column;
@@ -1101,7 +1101,7 @@
   font-weight: 700;
   line-height: 1.2 !important;
 }
-@media (max-width: 768px) {
+@media (max-width: 992px) {
   .hero-container .hero-container {
     flex-direction: column;
     padding: 100px 0 0 0;
@@ -1188,7 +1188,7 @@
   padding-top: 100px;
 }
 
-@media (max-width: 768px) {
+@media (max-width: 992px) {
   .text-block {
     text-align: left;
     padding-left: 40px;
@@ -1275,7 +1275,7 @@
   margin-bottom: 5px;
 }
 
-@media (max-width: 768px) {
+@media (max-width: 992px) {
   .text-list-block.background-grey {
     padding-left: 40px;
     padding-right: 40px;
@@ -1348,7 +1348,7 @@
   padding: 0 40px;
 }
 
-@media (max-width: 768px) {
+@media (max-width: 992px) {
   .questionnaire-section {
     display: flex;
     flex-direction: column;
@@ -1445,7 +1445,7 @@
   max-width: 280px;
 }
 
-@media (max-width: 768px) {
+@media (max-width: 992px) {
   .questionnaire-section .container {
     flex-direction: column;
     align-items: center;
@@ -1597,7 +1597,7 @@
   }
 }
 /* Media queries dla urządzeń o szerokości do 768px */
-@media screen and (max-width: 768px) {
+@media screen and (max-width: 992px) {
   .popup-content {
     padding: 20px;
     max-width: 90%;
@@ -1736,7 +1736,7 @@
   font-size: 40px;
 }
 
-@media (max-width: 768px) {
+@media (max-width: 992px) {
   .content-area {
     padding-bottom: 0px;
   }
@@ -1804,7 +1804,7 @@
   display: inline-block;
   border: none;
 }
-@media (max-width: 768px) {
+@media (max-width: 992px) {
   .map-section {
     flex-direction: column;
     padding: 40px 20px;
