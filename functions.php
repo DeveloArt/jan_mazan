@@ -74,6 +74,11 @@ function popup_settings_menu() {
     );
 }
 add_action('admin_menu', 'popup_settings_menu');
+function allow_svg_uploads( $mimes ) {
+    $mimes['svg'] = 'image/svg+xml';
+    return $mimes;
+}
+add_filter( 'upload_mimes', 'allow_svg_uploads' );
 
 function popup_settings_page() {
     if (!current_user_can('manage_options')) {
