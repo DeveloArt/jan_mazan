@@ -28,7 +28,7 @@ if ($tytul || $opis || $link_pliku): ?>
             
             <?php
             if ($link_pliku && function_exists('render_custom_button')):
-                render_custom_button('POBIERZ', $link_pliku);
+                render_custom_button('POBIERZ', false, $link_pliku);
             endif;
             ?>
         </div>

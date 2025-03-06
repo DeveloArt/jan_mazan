@@ -42,7 +42,7 @@ get_template_part('template-parts/buttons/button');
                             
                             <?php
                             if (!empty($plik['link_pliku']) && is_string($plik['link_pliku']) && function_exists('render_custom_button')): 
-                                render_custom_button('POBIERZ', $plik['link_pliku']);
+                                render_custom_button('POBIERZ', false, $plik['link_pliku']);
                             endif;
                             ?>
                         </div>
