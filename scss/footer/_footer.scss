@@ -63,18 +63,7 @@
       font-weight: 700;
 
       p + p {
-        margin-top: 20px; // dodatkowy odstęp między akapitami
-      }
-
-      a {
-        color: $color-secondary;
-        text-decoration: none;
-        transition: color 0.3s ease;
-
-        &:hover {
-          text-decoration: underline;
-          color: $color-accent; // zmień kolor hover według potrzeb
-        }
+        margin-top: 20px;
       }
     }
   }

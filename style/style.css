@@ -350,15 +350,6 @@
 .footer-wrapper .footer .footer-copyright p + p {
   margin-top: 20px;
 }
-.footer-wrapper .footer .footer-copyright a {
-  color: #fff;
-  text-decoration: none;
-  transition: color 0.3s ease;
-}
-.footer-wrapper .footer .footer-copyright a:hover {
-  text-decoration: underline;
-  color: #4375b5;
-}
 
 @media (max-width: 768px) {
   .footer-wrapper .footer {
