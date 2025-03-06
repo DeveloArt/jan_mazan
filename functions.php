@@ -23,7 +23,7 @@ add_action('wp_head', 'mytheme_add_svg_favicon');
 
 function my_cf7_custom_button($form_html) {
     ob_start();
-    render_custom_button('Wyślij', '', true);
+    render_custom_button('Wyślij', '', true, false);
     $custom_button_html = ob_get_clean();
     $form_html = str_replace('[submit "Wyślij"]', $custom_button_html, $form_html);
 

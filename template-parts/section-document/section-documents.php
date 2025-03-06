@@ -10,7 +10,7 @@ if (function_exists('get_field')) :
         <div class="documents-section-content">
             <h2><?php echo esc_html($title); ?></h2>
             <p><?php echo esc_html($description); ?></p>
-            <?php render_custom_button(esc_html($button_text), false, "https://dev.jan-mazan.develoart.pl/dokumenty/"); ?>
+            <?php render_custom_button(esc_html($button_text), false, "https://dev.jan-mazan.develoart.pl/dokumenty/", false); ?>
         </div>
     </div>
 <?php endif; ?>
