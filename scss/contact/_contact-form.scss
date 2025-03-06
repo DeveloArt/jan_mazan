@@ -97,15 +97,38 @@ $button-height: 44px;
       }
 
       .wpcf7-form-control-wrap[data-name="consent"] {
-        display: inline-flex;
+        display: flex;
         align-items: center;
-        gap: 10px;
 
         .wpcf7-list-item {
-          display: inline-flex;
+          display: flex;
           align-items: center;
           gap: 10px;
           margin: 0;
+
+          label {
+            display: flex;
+            align-items: center;
+            gap: 10px;
+            margin: 0;
+          }
+
+          .wpcf7-list-item-label {
+            font-size: 16px;
+            font-family: $font-family-base;
+            margin-right: 10px;
+            flex-wrap: wrap;
+
+            a {
+              color: $color-secondary;
+              text-decoration: underline;
+              transition: color 0.3s;
+
+              &:hover {
+                color: $color-accent;
+              }
+            }
+          }
         }
 
         input[type="checkbox"] {
@@ -141,13 +164,6 @@ $button-height: 44px;
               color: $color-secondary;
             }
           }
-        }
-
-        .wpcf7-list-item-label {
-          font-size: 16px;
-          font-family: $font-family-base;
-          margin-right: 10px;
-          flex-wrap: wrap;
         }
       }
 

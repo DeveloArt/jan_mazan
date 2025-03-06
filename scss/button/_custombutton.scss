@@ -19,8 +19,7 @@
 
   font-family: "Montserrat";
   text-transform: uppercase;
-}
-
-.custom-button:hover {
-  // background-color: lighten($color-accent, 10%);
+  &:hover {
+    background-color: darken($color-accent, 10%);
+  }
 }

@@ -468,6 +468,9 @@
   font-family: "Montserrat";
   text-transform: uppercase;
 }
+.custom-button:hover {
+  background-color: rgb(53.2217741935, 92.939516129, 143.7782258065);
+}
 
 .notarial-container {
   padding: 60px 0;
@@ -799,15 +802,34 @@
   display: none;
 }
 .contact-form-section .wpcf7-form .form-footer .wpcf7-form-control-wrap[data-name=consent] {
-  display: inline-flex;
+  display: flex;
   align-items: center;
-  gap: 10px;
 }
 .contact-form-section .wpcf7-form .form-footer .wpcf7-form-control-wrap[data-name=consent] .wpcf7-list-item {
-  display: inline-flex;
+  display: flex;
   align-items: center;
   gap: 10px;
   margin: 0;
+}
+.contact-form-section .wpcf7-form .form-footer .wpcf7-form-control-wrap[data-name=consent] .wpcf7-list-item label {
+  display: flex;
+  align-items: center;
+  gap: 10px;
+  margin: 0;
+}
+.contact-form-section .wpcf7-form .form-footer .wpcf7-form-control-wrap[data-name=consent] .wpcf7-list-item .wpcf7-list-item-label {
+  font-size: 16px;
+  font-family: "Montserrat", sans-serif;
+  margin-right: 10px;
+  flex-wrap: wrap;
+}
+.contact-form-section .wpcf7-form .form-footer .wpcf7-form-control-wrap[data-name=consent] .wpcf7-list-item .wpcf7-list-item-label a {
+  color: #fff;
+  text-decoration: underline;
+  transition: color 0.3s;
+}
+.contact-form-section .wpcf7-form .form-footer .wpcf7-form-control-wrap[data-name=consent] .wpcf7-list-item .wpcf7-list-item-label a:hover {
+  color: #4375b5;
 }
 .contact-form-section .wpcf7-form .form-footer .wpcf7-form-control-wrap[data-name=consent] input[type=checkbox] {
   flex-shrink: 0;
@@ -837,12 +859,6 @@
 }
 .contact-form-section .wpcf7-form .form-footer .wpcf7-form-control-wrap[data-name=consent] input[type=checkbox]:checked::before {
   color: #fff;
-}
-.contact-form-section .wpcf7-form .form-footer .wpcf7-form-control-wrap[data-name=consent] .wpcf7-list-item-label {
-  font-size: 16px;
-  font-family: "Montserrat", sans-serif;
-  margin-right: 10px;
-  flex-wrap: wrap;
 }
 .contact-form-section .wpcf7-form .form-footer .wpcf7-submit {
   width: 200px;
@@ -1092,6 +1108,7 @@
   color: #fff;
   font-family: "EB Garamond", serif;
   font-weight: 700;
+  line-height: 1.2 !important;
 }
 @media (max-width: 768px) {
   .hero-container {

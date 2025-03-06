@@ -64,8 +64,8 @@ if (function_exists('acf_add_options_page')) {
 
 function popup_settings_menu() {
     add_menu_page(
-        'Popup Settings',         
-        'Popup Settings',     
+        'Okno informacyjne',
+        'Okno informacyjne',
         'manage_options',     
         'popup-settings',       
         'popup_settings_page',    

@@ -1,9 +1,9 @@
 <?php
 
-$tytul = get_field('tytul');
-$opis = get_field('opis');
-$link_pliku = get_field('link_pliku');
-$nazwa_pliku = get_field('nazwa_pliku');
+$tytul = get_field('tytul_3');
+$opis = get_field('opis_3');
+$link_pliku = get_field('link_pliku_3');
+$nazwa_pliku = get_field('nazwa_pliku_3');
 
 $icon_path = get_template_directory_uri() . '/assets/file.svg';
 
