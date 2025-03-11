@@ -759,7 +759,7 @@
   transform: translateX(-50%);
   width: 90%;
   max-width: 600px;
-  z-index: 100;
+  z-index: 1;
   margin: 0 !important;
   color: #dc3232;
   background: rgba(255, 107, 107, 0.1);
@@ -883,7 +883,7 @@
     padding-top: 40px;
   }
   .contact-form-section .wpcf7-form .wpcf7-response-output {
-    top: 10px;
+    top: -35px;
     font-size: 14px !important;
   }
   .contact-form-section .wpcf7-form .form-footer .wpcf7-form-control-wrap[data-name=consent] .wpcf7-list-item .wpcf7-list-item-label {
