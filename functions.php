@@ -98,8 +98,8 @@ function popup_settings_page() {
 
             <table class="form-table">
                 <tr>
-                    <th><label for="popup_text">Tekst Popupa:</label></th>
-                    <td><textarea id="popup_text" name="popup_text" rows="4" cols="50"><?php echo esc_textarea($popup_text); ?></textarea></td>
+                    <th><label for="popup_text">Tekst okna informacyjnego:</label></th>
+                    <td><textarea id="popup_text" name="popup_text" rows="8" cols="70"><?php echo esc_textarea($popup_text); ?></textarea></td>
                 </tr>
                 <tr>
                     <th><label for="popup_active">Aktywny:</label></th>

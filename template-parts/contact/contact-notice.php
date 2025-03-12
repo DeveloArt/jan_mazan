@@ -10,7 +10,7 @@ if ($popup_active && $popup_text) : ?>
             </div>
             <div class="contact-page-notice-right">
                 <h2 class="contact-page-notice-title">Uwaga!</h2>
-                <p class="contact-page-notice-text">
+                <!-- <p class="contact-page-notice-text">
                     Szanowni Państwo,<br>
                     Ze względu na moją nieobecność w dniach 
                     <span class="contact-page-highlight"><?php echo esc_html($popup_text); ?></span> 
@@ -19,7 +19,18 @@ if ($popup_active && $popup_text) : ?>
                 <p class="contact-page-notice-text">
                     Niezależnie od typu sprawy prosimy każdorazowo o wcześniejsze uzgodnienie terminu wizyty. 
                     Z uwagi na prywatność naszych klientów zastrzegamy możliwość odmówienia obsługi klienta niezapowiedzianego.
+                </p> -->
+                <!-- <p class="popup-text">
+                    Szanowni Państwo,<br>
+                    Ze względu na moją nieobecność w dniach 
+                    <span class="highlight"><?php echo esc_html($popup_text); ?></span> 
+                    kancelaria będzie nieczynna.
                 </p>
+                <p class="popup-text">
+                    Niezależnie od typu sprawy prosimy każdorazowo o wcześniejsze uzgodnienie terminu wizyty. 
+                    Z uwagi na prywatność naszych klientów zastrzegamy możliwość odmówienia obsługi klienta niezapowiedzianego.
+                </p> -->
+                <p class="contact-page-notice-text"><?php echo esc_html($popup_text); ?></p>
                 <p class="contact-page-notice-signature">Z wyrazami szacunku, <br> <span class="contact-page-name">Jan Maria Mazan</span></p>
             </div>
         </div>
