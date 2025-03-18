@@ -5,6 +5,15 @@ $form-footer-gap: 10px;
 $button-width: 200px;
 $button-height: 44px;
 
+// Dodajemy style dla kontenera Cloudflare Turnstile
+.cf-turnstile {
+  margin-bottom: 10px;
+  min-height: 60px; // Upewnij się, że widget ma wystarczającą wysokość
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
 .contact-form-section {
   margin-top: 10px;
   padding: 0 10px;
@@ -29,7 +38,6 @@ $button-height: 44px;
       border: none;
       font-size: 18px;
       font-family: $font-family-base;
-      padding-left: 10px;
 
       &:focus {
         outline: none;

@@ -733,6 +733,14 @@
   }
 }
 
+.cf-turnstile {
+  margin-bottom: 10px;
+  min-height: 60px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
 .contact-form-section {
   margin-top: 10px;
   padding: 0 10px;
@@ -756,7 +764,6 @@
   border: none;
   font-size: 18px;
   font-family: "Montserrat", sans-serif;
-  padding-left: 10px;
 }
 .contact-form-section .wpcf7-form .wpcf7-form-control:focus {
   outline: none;
