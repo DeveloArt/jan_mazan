@@ -13,7 +13,7 @@ $button-height: 44px;
     position: relative;
     display: flex;
     flex-direction: column;
-    gap: 10px;
+    gap: 5px;
     padding-top: 60px;
 
     > p {
@@ -197,10 +197,17 @@ $button-height: 44px;
       font-size: $font-size-base;
     }
   }
+
+  .contact-page-form & {
+    .wpcf7-form {
+      padding-top: 0;
+    }
+  }
 }
 
 @media (max-width: $breakpoint-md) {
   .contact-form-section {
+    padding: 0 20px;
     .wpcf7-form {
       padding-top: 40px;
 
@@ -210,6 +217,9 @@ $button-height: 44px;
       }
 
       .form-footer {
+        .wpcf7-submit {
+          width: 155px;
+        }
         .wpcf7-form-control-wrap[data-name="consent"] {
           .wpcf7-list-item {
             .wpcf7-list-item-label {
@@ -223,6 +233,11 @@ $button-height: 44px;
         > p {
           gap: 0px;
         }
+      }
+    }
+    .contact-page-form & {
+      .wpcf7-form {
+        padding-top: 0;
       }
     }
   }
