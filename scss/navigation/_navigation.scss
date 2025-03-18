@@ -17,19 +17,17 @@
     .site-logo {
       width: 100px;
       height: auto;
-      margin-left: 40px;
+      margin-left: 0;
     }
   }
 
   .main-navigation {
-    margin-right: 40px;
-
     .menu {
       display: flex;
       list-style: none;
       margin: 0;
       padding: 0;
-      gap: 5rem;
+      gap: 6rem;
 
       > li {
         position: relative;
@@ -111,6 +109,18 @@
 }
 
 @media (max-width: $breakpoint-md) {
+  .site-header {
+    .container {
+      height: 98px;
+      padding: 0;
+    }
+  }
+  .site-branding {
+    .site-logo {
+      margin-left: 20px !important;
+      height: 30px;
+    }
+  }
   .main-navigation {
     display: none;
   }
@@ -172,7 +182,7 @@
       .site-logo {
         height: 30px;
         width: 100px;
-        margin-left: 20px;
+        margin-left: 20px !important;
       }
 
       .close-menu {
@@ -211,7 +221,6 @@
           box-sizing: border-box;
         }
 
-        /* Submenu z animacją */
         .sub-menu {
           display: block;
           max-height: 0;

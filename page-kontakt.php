@@ -49,7 +49,7 @@ get_header();
         ]);
         ?>
 	</div>
-	<div class="contact-form-container">
+	<div class="contact-form-container contact-page-form">
 		<h2>Zapraszam do kontaktu!</h2>
 		<?php get_template_part('template-parts/contact/contact-form', null, []); ?>
 	</div>
