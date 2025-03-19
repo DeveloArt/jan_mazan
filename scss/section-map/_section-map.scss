@@ -8,8 +8,8 @@
   padding: 80px 20px;
 
   &__content {
-    flex: 1 1 50%;
-    padding-right: 40px;
+    flex: 1 1 40%;
+    padding-right: 80px;
 
     h2 {
       font-size: $font-size-h2;
@@ -29,16 +29,12 @@
     }
   }
 
-  &__image {
-    flex: 1 1 50%;
-    text-align: center;
-
-    img {
-      max-width: 100%;
-      height: auto;
-      display: inline-block;
-      border: none;
-    }
+  .map-section-map {
+    max-width: 380px;
+    height: 428px;
+  }
+  .map-section-map iframe {
+    border-radius: 20px;
   }
 
   @media (max-width: $breakpoint-md) {
@@ -60,9 +56,8 @@
         line-height: $line-height-base;
       }
     }
-
-    &__image {
-      margin: 0 auto;
+    .map-section-map {
+      width: 100%;
     }
   }
 }
