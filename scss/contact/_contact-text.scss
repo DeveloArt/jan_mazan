@@ -1,15 +1,16 @@
 .contact-text {
   max-width: 480px;
   padding: 0 10px;
+  display: flex;
+  flex-direction: column;
+  gap: 25px;
   h2 {
     font-size: $font-size-h2;
     font-weight: 700;
-    margin-bottom: 25px;
     font-family: $font-family-title;
   }
   .header-contact-item {
     text-transform: uppercase;
-    margin-bottom: 25px;
     list-style: none;
     li {
       font-weight: 700;
@@ -26,13 +27,12 @@
     margin-bottom: 20px;
   }
 
-  img {
-    width: 100%;
-    max-width: 600px;
-    height: 220px;
-    display: block;
-    border-radius: 8px;
-    margin-bottom: 25px;
+  .map-section-map {
+    max-width: 480px;
+    height: 196px;
+  }
+  .map-section-map iframe {
+    border-radius: 20px;
   }
 }
 
@@ -47,6 +47,9 @@
     p {
       font-weight: 400;
       line-height: $line-height-base;
+    }
+    .map-section-map {
+      max-width: 480px;
     }
   }
 }
