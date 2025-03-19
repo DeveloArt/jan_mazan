@@ -1701,117 +1701,6 @@
     font-size: 20px;
   }
 }
-.content-area {
-  padding-top: 220px;
-  padding-bottom: 130px;
-  background-color: #252525;
-  color: #fff;
-  box-sizing: border-box;
-}
-.content-area .contact-content {
-  max-width: 780px;
-  margin: 0 auto;
-  padding: 60px;
-}
-.content-area .contact-content h1 {
-  font-size: 2.5rem;
-  margin-bottom: 20px;
-  color: #fff;
-}
-.content-area .contact-content p {
-  font-size: 16px;
-  margin-bottom: 20px;
-  font-weight: 400;
-}
-.content-area .contact-content .contact-info {
-  list-style: none;
-  padding: 0;
-  margin: 0;
-}
-.content-area .contact-content .contact-info .contact-info-item {
-  margin-bottom: 10px;
-  font-size: 16px;
-  line-height: 1.5;
-}
-.content-area .contact-content .contact-info .contact-info-item .contact-label {
-  font-weight: 700;
-  text-transform: uppercase;
-  color: #4375b5;
-}
-.content-area .contact-content .contact-info .contact-info-item .contact-text {
-  color: #fff;
-  font-size: 16px;
-  font-weight: 700;
-}
-.content-area .contact-content .contact-info .contact-info-item a {
-  color: #bbb;
-  text-decoration: none;
-  transition: color 0.3s ease;
-}
-.content-area .contact-content .contact-info .contact-info-item a:hover {
-  color: #fff;
-}
-.content-area .map-section-container {
-  background-color: #28374a;
-  width: 100%;
-  display: flex;
-  align-items: center;
-  justify-content: center;
-}
-.content-area .open-hours-container {
-  padding: 130px 0;
-  background-color: #252525;
-}
-.content-area .contact-form-container {
-  background-color: #28374a;
-  color: #fff;
-  padding: 60px 20px;
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-}
-.content-area .contact-form-container > * {
-  max-width: 1000px;
-  width: 100%;
-}
-.content-area .contact-form-container h2 {
-  text-align: left;
-  margin-bottom: 20px;
-  margin-left: 10px;
-  font-size: 40px;
-}
-
-@media (max-width: 992px) {
-  .content-area {
-    padding-bottom: 0px;
-  }
-  .content-area .contact-content {
-    padding: 20px;
-  }
-  .content-area .contact-content h1 {
-    text-align: center;
-    font-family: "EB Garamond", serif;
-    font-size: 30px;
-    font-weight: 700;
-    line-height: 32.5px;
-  }
-  .content-area .contact-content p {
-    font-weight: 400;
-    font-family: "Montserrat", sans-serif;
-    line-height: 19.5px;
-  }
-  .content-area .contact-content .contact-info .contact-info-item {
-    margin-bottom: 15px;
-    line-height: 19.5px;
-    font-family: "Montserrat", sans-serif;
-  }
-  .content-area .contact-content .contact-info .contact-info-item .contact-label {
-    margin-right: 0px;
-  }
-  .content-area .open-hours-container {
-    padding: 50px 0;
-  }
-}
 .map-section {
   display: flex;
   align-items: center;
@@ -1922,6 +1811,118 @@
   margin-bottom: 8px;
 }
 
+.content-area {
+  padding-top: 220px;
+  padding-bottom: 130px;
+  background-color: #252525;
+  color: #fff;
+  box-sizing: border-box;
+}
+.content-area .contact-content {
+  max-width: 780px;
+  margin: 0 auto;
+  padding: 60px;
+}
+.content-area .contact-content h1 {
+  font-size: 2.5rem;
+  margin-bottom: 20px;
+  color: #fff;
+}
+.content-area .contact-content p {
+  font-size: 16px;
+  margin-bottom: 20px;
+  font-weight: 400;
+}
+.content-area .contact-content .contact-info {
+  list-style: none;
+  padding: 0;
+  margin: 0;
+}
+.content-area .contact-content .contact-info .contact-info-item {
+  margin-bottom: 10px;
+  font-size: 16px;
+  line-height: 1.5;
+}
+.content-area .contact-content .contact-info .contact-info-item .contact-label {
+  font-weight: 700;
+  text-transform: uppercase;
+  color: #4375b5;
+}
+.content-area .contact-content .contact-info .contact-info-item .contact-text {
+  color: #fff;
+  font-size: 16px;
+  font-weight: 700;
+}
+.content-area .contact-content .contact-info .contact-info-item a {
+  color: #bbb;
+  text-decoration: none;
+  transition: color 0.3s ease;
+}
+.content-area .contact-content .contact-info .contact-info-item a:hover {
+  color: #fff;
+}
+.content-area .map-section-container {
+  background-color: #28374a;
+  width: 100%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+.content-area .open-hours-container {
+  padding: 130px 0;
+  background-color: #252525;
+}
+
+.contact-form-container {
+  background-color: #28374a;
+  color: #fff;
+  padding: 60px 20px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+.contact-form-container > * {
+  max-width: 1000px;
+  width: 100%;
+}
+.contact-form-container h2 {
+  text-align: left;
+  margin-bottom: 20px;
+  margin-left: 10px;
+  font-size: 40px;
+}
+
+@media (max-width: 992px) {
+  .content-area {
+    padding-bottom: 0px;
+  }
+  .content-area .contact-content {
+    padding: 20px;
+  }
+  .content-area .contact-content h1 {
+    text-align: center;
+    font-family: "EB Garamond", serif;
+    font-size: 30px;
+    font-weight: 700;
+    line-height: 32.5px;
+  }
+  .content-area .contact-content p {
+    font-weight: 400;
+    font-family: "Montserrat", sans-serif;
+    line-height: 19.5px;
+  }
+  .content-area .contact-content .contact-info .contact-info-item {
+    margin-bottom: 15px;
+    line-height: 19.5px;
+    font-family: "Montserrat", sans-serif;
+  }
+  .content-area .contact-content .contact-info .contact-info-item .contact-label {
+    margin-right: 0px;
+  }
+  .content-area .open-hours-container {
+    padding: 50px 0;
+  }
+}
 html {
   scroll-behavior: smooth;
 }
