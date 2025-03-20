@@ -7,18 +7,24 @@
           <span class="desktop-label">TELEFON:</span>
           <span class="mobile-label">TEL:</span>
         </span>
-        <?php the_field('phone_number'); ?>
+        <a href="tel:<?php echo esc_attr(get_field('phone_number')); ?>" class="nav-contact-text">
+          <?php the_field('phone_number'); ?>
+        </a>
       </li>
       <li>
         <span class="header-contact-title">
           <span class="desktop-label">KOMÓRKA:</span>
           <span class="mobile-label">KOM:</span>
         </span>
-        <?php the_field('mobile_number'); ?>
+        <a href="tel:<?php echo esc_attr(get_field('mobile_number')); ?>" class="nav-contact-text">
+          <?php the_field('mobile_number'); ?>
+        </a>
       </li>
       <li>
         <span class="header-contact-title">E-MAIL:</span>
-        <?php the_field('email_address'); ?>
+        <a href="mailto:<?php echo esc_attr(get_field('email_address')); ?>" class="nav-contact-text">
+          <?php the_field('email_address'); ?>
+        </a>
       </li>
     </ul>
   </div>

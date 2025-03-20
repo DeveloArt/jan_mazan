@@ -278,6 +278,9 @@
   align-items: center;
   white-space: nowrap;
 }
+.header-contact .header-contact-item li .nav-contact-text {
+  color: #fff;
+}
 .header-contact .header-contact-item li:nth-child(1) {
   margin-right: 40px;
 }
@@ -731,14 +734,6 @@
     justify-content: center;
     align-items: center;
   }
-}
-
-.cf-turnstile {
-  margin-bottom: 10px;
-  min-height: 60px;
-  display: flex;
-  justify-content: center;
-  align-items: center;
 }
 
 .contact-form-section {
