@@ -18,7 +18,7 @@ function cf7_validate_turnstile($result, $tag) {
             $result->invalidate($tag, "Proszę zaznaczyć, że nie jesteś botem.");
             return $result;
         }
-        $secret = '0x4AAAAAABBLpmYzkxuJWpVXuYKCbz30e20';
+        $secret = '0x4AAAAAABBImX_VcDuVs-ux4yq_9YmeCc0';
         $response = wp_remote_post(
             'https://challenges.cloudflare.com/turnstile/v0/siteverify',
             [

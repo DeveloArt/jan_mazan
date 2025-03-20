@@ -759,6 +759,7 @@
   border: none;
   font-size: 18px;
   font-family: "Montserrat", sans-serif;
+  padding-left: 15px;
 }
 .contact-form-section .wpcf7-form .wpcf7-form-control:focus {
   outline: none;
